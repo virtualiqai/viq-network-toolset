@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <!-- 
+    Virtual IQ AI — The IQ Ligature
+    Master symbol, 240×240 grid
+    
+    Construction principles:
+      - Lowercase "iq" rendered as a typographic mark
+      - Stem of "i" at x=83, dot above as the signature accent (BLUE)
+      - Bowl of "q" centered at (140, 120), with tail descending below baseline
+      - Geometric center of the overall mark = canvas center (120, 120)
+      - Stem stroke: 20px / Bowl & tail stroke: 14px
+      - Dot: 28×28px rounded square (rx=2) in brand blue
+      
+    Anatomy:
+      Top of dot:     y=32.5
+      Baseline:       y=170 (visually)
+      Descender end:  y=207.5
+      Cap height:     y=77.5 (top of i stem)
+      x-height:       y=88 (top of q bowl)
+  -->
+  
+  <!-- The "i" stem -->
+  <line 
+    x1="83" y1="77.5" 
+    x2="83" y2="162.5" 
+    stroke="#0A0E1A" 
+    stroke-width="20" 
+    stroke-linecap="round"/>
+  
+  <!-- The "i" dot — the signature accent, pointy-top hexagon in brand blue -->
+  <polygon 
+    points="83,31.5 96,39 96,54 83,61.5 70,54 70,39"
+    fill="#2563EB"/>
+  
+  <!-- The "q" bowl -->
+  <circle 
+    cx="140" cy="120" 
+    r="32" 
+    stroke="#0A0E1A" 
+    stroke-width="14"/>
+  
+  <!-- The "q" tail (descender) -->
+  <line 
+    x1="172" y1="120" 
+    x2="172" y2="207.5" 
+    stroke="#0A0E1A" 
+    stroke-width="14" 
+    stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,488 @@
+VIRTUAL IQ AI NETOPS TOOLSET - END-USER LICENSE AGREEMENT
+
+Effective: upon your download, installation, or use of the Software.
+© 2026 Virtual IQ AI · USA. All rights reserved.
+
+IMPORTANT - READ CAREFULLY. THIS END-USER LICENSE AGREEMENT ("AGREEMENT")
+IS A LEGAL CONTRACT BETWEEN YOU (EITHER AN INDIVIDUAL OR A SINGLE LEGAL
+ENTITY, "YOU" OR "LICENSEE") AND VIRTUAL IQ AI · USA ("LICENSOR,"
+"VIRTUAL IQ AI," "WE," OR "US"). BY DOWNLOADING, INSTALLING, COPYING, OR
+OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS OF THIS
+AGREEMENT. IF YOU DO NOT AGREE, DO NOT DOWNLOAD, INSTALL, OR USE THE
+SOFTWARE.
+
+This is a proprietary software license. The Software is NOT open source.
+It is made available free of charge for Personal Use and Non-Commercial
+Use only, subject to the terms below.
+
+================================================================================
+1. DEFINITIONS
+================================================================================
+
+1.1  "Software" means the Virtual IQ AI NetOps Toolset (also distributed
+     under the filename "VIQ Engineer Toolset"), including the compiled
+     binary executables, installers, libraries, configuration files,
+     documentation, sample content, updates, and any related materials
+     distributed by Licensor.
+
+1.2  "Licensor" means Virtual IQ AI · USA.
+
+1.3  "Licensee" or "You" means the individual or single legal entity
+     accepting this Agreement and using the Software.
+
+1.4  "Personal Use" means use by an individual natural person for
+     non-commercial personal purposes, including personal learning,
+     education, and personal network administration on networks the
+     individual owns.
+
+1.5  "Non-Commercial Use" means use that is not primarily intended for or
+     directed toward commercial advantage or monetary compensation,
+     including internal use by a non-profit organization for its own
+     operations.
+
+1.6  "Authorized Network" means any network, system, host, device, or
+     resource for which You have express, current, and lawful written or
+     documented authorization from the owner or operator to access,
+     probe, scan, query, or interact with using the Software.
+
+1.7  "Commercial Use" means any use of the Software in connection with
+     activities intended for or directed toward commercial advantage or
+     monetary compensation, including use by employees, contractors, or
+     agents of a for-profit business for the benefit of that business or
+     its clients.
+
+================================================================================
+2. GRANT OF LICENSE
+================================================================================
+
+2.1  Subject to Licensee's continuous compliance with this Agreement,
+     Licensor grants Licensee a limited, personal, non-exclusive,
+     non-transferable, non-sublicensable, revocable license to download,
+     install, and use the Software, in object-code form only, solely for
+     Personal Use or Non-Commercial Use, and solely on Authorized
+     Networks.
+
+2.2  COMMERCIAL USE IS NOT PERMITTED under this Agreement. Any
+     Commercial Use requires a separate written commercial license from
+     Licensor. To inquire about a commercial license, contact
+     info@virtualiqai.com.
+
+2.3  This license is granted to Licensee and may not be assigned,
+     transferred, sublicensed, leased, rented, lent, distributed, or
+     otherwise made available to any third party.
+
+================================================================================
+3. RESTRICTIONS
+================================================================================
+
+Licensee shall not, and shall not permit any third party to:
+
+3.1  Copy, reproduce, distribute, republish, upload, post, transmit, or
+     otherwise make the Software available to any third party, except
+     for a single archival backup copy.
+
+3.2  Sell, rent, lease, lend, sublicense, assign, or transfer the
+     Software or any rights under this Agreement.
+
+3.3  Reverse engineer, decompile, disassemble, decrypt, deobfuscate, or
+     otherwise attempt to derive the source code, underlying ideas,
+     algorithms, structure, or organization of the Software, including
+     any attempt to circumvent, defeat, or extract the key from the
+     AES-256-GCM source-code encryption applied to the build, except to
+     the limited extent that applicable law expressly permits such
+     activity notwithstanding this restriction.
+
+3.4  Modify, adapt, translate, port, or create derivative works based on
+     the Software in whole or in part.
+
+3.5  Remove, alter, obscure, or fail to reproduce any copyright,
+     trademark, patent, or other proprietary notice, label, or watermark
+     on or within the Software.
+
+3.6  Use the Software to develop, train, benchmark, or improve any
+     competing product or service.
+
+3.7  Use the Software to scan, probe, query, access, interact with, or
+     attempt to access any network, system, host, device, or resource
+     that is not an Authorized Network, including:
+     (a) any network You do not own or have express written authorization
+         to access;
+     (b) any third-party network without the documented authorization of
+         the network owner or operator;
+     (c) any government, military, critical-infrastructure, financial-
+         services, healthcare, or other regulated network without
+         express written authorization scoped to the activities You
+         perform with the Software.
+
+3.8  Use the Software in connection with:
+     (a) any penetration testing, vulnerability assessment, red-team
+         engagement, or security audit conducted without prior written
+         authorization from the network owner;
+     (b) unauthorized monitoring, interception, or recording of
+         communications;
+     (c) any activity that violates the United States Computer Fraud and
+         Abuse Act (18 U.S.C. § 1030), the Electronic Communications
+         Privacy Act, the Stored Communications Act, or any analogous
+         federal, state, local, foreign, or international law;
+     (d) any tortious, fraudulent, or unlawful activity.
+
+3.9  Use the Software in any jurisdiction or in any manner that would
+     violate United States export control laws or regulations, including
+     the Export Administration Regulations and sanctions administered by
+     the Office of Foreign Assets Control (OFAC). The Software may not
+     be downloaded, installed, exported, re-exported, or used in or by
+     any person or entity located in, organized under the laws of, or
+     ordinarily resident in any country or territory subject to
+     comprehensive U.S. sanctions (currently including, without
+     limitation, Cuba, Iran, North Korea, Syria, and the Crimea, Donetsk,
+     and Luhansk regions of Ukraine), or by any person or entity on the
+     U.S. Treasury Department's List of Specially Designated Nationals
+     or the U.S. Commerce Department's Denied Persons List or Entity
+     List.
+
+================================================================================
+4. AUTHORIZATION WARRANTY (LICENSEE'S CORE OBLIGATION)
+================================================================================
+
+4.1  Licensee represents, warrants, and covenants on a continuous basis
+     that, with respect to every use of the Software, Licensee:
+
+     (a) holds all necessary rights, permissions, consents, and
+         authorizations from the owner and operator of every network,
+         system, host, or device targeted by the Software;
+     (b) is using the Software in full compliance with all applicable
+         laws, regulations, contractual obligations, and the policies of
+         any network owner;
+     (c) is solely responsible for determining whether the Software's
+         use in a given environment is lawful, authorized, and
+         appropriate.
+
+4.2  Licensor has no ability and no obligation to verify the existence
+     or scope of Licensee's authorization. Sole responsibility for
+     ensuring authorization rests with Licensee.
+
+================================================================================
+5. DISCLAIMER OF WARRANTIES
+================================================================================
+
+5.1  THE SOFTWARE IS PROVIDED FREE OF CHARGE, "AS IS" AND "AS
+     AVAILABLE," WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND. YOUR
+     USE OF THE SOFTWARE IS VOLUNTARY, AND YOU ASSUME FULL RESPONSIBILITY
+     FOR, AND ALL RISK ARISING FROM, YOUR ACCESS TO AND USE OF THE
+     SOFTWARE.
+
+5.2  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LICENSOR
+     DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY,
+     INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+     QUIET ENJOYMENT, ACCURACY, AND NON-INFRINGEMENT.
+
+5.3  LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL: (a) MEET
+     LICENSEE'S REQUIREMENTS; (b) OPERATE WITHOUT INTERRUPTION OR ERROR;
+     (c) BE FREE OF VULNERABILITIES, BUGS, OR DEFECTS; (d) PRODUCE
+     ACCURATE, COMPLETE, OR RELIABLE RESULTS; (e) BE COMPATIBLE WITH ANY
+     PARTICULAR HARDWARE, OPERATING SYSTEM, NETWORK DEVICE, OR THIRD-
+     PARTY SOFTWARE; OR (f) BE SUITABLE FOR USE IN ANY PRODUCTION,
+     MISSION-CRITICAL, REGULATED, OR HIGH-AVAILABILITY ENVIRONMENT.
+
+5.4  NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY LICENSOR, ITS
+     EMPLOYEES, DISTRIBUTORS, AGENTS, OR REPRESENTATIVES SHALL CREATE A
+     WARRANTY OR IN ANY WAY EXPAND THE SCOPE OF THIS DISCLAIMER.
+
+================================================================================
+6. NETWORK OPERATIONS DISCLAIMER
+================================================================================
+
+6.1  Licensee acknowledges that the Software is a network operations
+     utility that interacts with live network devices and infrastructure.
+     Network probing, scanning, SSH command execution, and similar
+     operations carry inherent risks, including but not limited to:
+     device CPU spikes, service disruptions, configuration drift,
+     unexpected device behavior, intrusion-detection-system or
+     intrusion-prevention-system alerts, regulatory inspection, and
+     accidental impact to production traffic.
+
+6.2  LICENSEE ASSUMES ALL RISK ARISING FROM USE OF THE SOFTWARE,
+     INCLUDING WITHOUT LIMITATION ANY NETWORK OUTAGE, SERVICE
+     DISRUPTION, DEVICE FAILURE, CONFIGURATION CHANGE, DATA LOSS, OR
+     REGULATORY CONSEQUENCE RESULTING FROM SUCH USE.
+
+6.3  Licensee is solely responsible for testing the Software in a non-
+     production environment before any use against production systems.
+
+================================================================================
+7. NO PROFESSIONAL ADVICE
+================================================================================
+
+7.1  Outputs of the Software, including diagnostic reports, scan
+     results, configuration audits, WLAN investigations, and any other
+     information produced by the Software, are provided for informational
+     purposes only and do not constitute professional engineering,
+     security, legal, regulatory, or compliance advice.
+
+7.2  Licensee is solely responsible for applying professional judgment
+     to any decision made on the basis of Software output.
+
+================================================================================
+8. LIMITATION OF LIABILITY
+================================================================================
+
+8.1  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT
+     SHALL LICENSOR, ITS OFFICERS, MEMBERS, EMPLOYEES, AGENTS,
+     LICENSORS, OR CONTRIBUTORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+     SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY KIND,
+     INCLUDING WITHOUT LIMITATION:
+
+     (a) LOST PROFITS, LOST REVENUE, OR LOST BUSINESS OPPORTUNITY;
+     (b) LOST, CORRUPTED, OR INACCURATE DATA;
+     (c) BUSINESS INTERRUPTION OR LOSS OF GOODWILL;
+     (d) NETWORK OUTAGES, SERVICE DISRUPTIONS, OR DEVICE FAILURES;
+     (e) REGULATORY FINES, PENALTIES, OR ENFORCEMENT ACTIONS;
+     (f) THIRD-PARTY CLAIMS;
+     (g) COST OF SUBSTITUTE GOODS, SERVICES, OR TECHNOLOGY,
+
+     WHETHER ARISING IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT
+     LIABILITY, BREACH OF WARRANTY, OR ANY OTHER LEGAL OR EQUITABLE
+     THEORY, AND WHETHER OR NOT LICENSOR HAS BEEN ADVISED OF THE
+     POSSIBILITY OF SUCH DAMAGES, AND EVEN IF A REMEDY SET FORTH HEREIN
+     IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.
+
+8.2  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LICENSOR'S
+     AGGREGATE LIABILITY ARISING OUT OF OR RELATING TO THIS AGREEMENT
+     OR THE SOFTWARE, REGARDLESS OF THE FORM OF ACTION, SHALL NOT
+     EXCEED THE GREATER OF: (a) THE AMOUNT ACTUALLY PAID BY LICENSEE TO
+     LICENSOR FOR THE SOFTWARE IN THE TWELVE (12) MONTHS PRECEDING THE
+     CLAIM (WHICH, FOR USE UNDER THIS AGREEMENT, IS ZERO DOLLARS US$0);
+     OR (b) ONE HUNDRED U.S. DOLLARS (US$100), WHICHEVER IS LESS.
+
+8.3  THE LIMITATIONS IN THIS SECTION 8 ARE A FUNDAMENTAL ELEMENT OF
+     THE BASIS OF THE BARGAIN BETWEEN LICENSOR AND LICENSEE. THE
+     SOFTWARE WOULD NOT BE PROVIDED WITHOUT THESE LIMITATIONS.
+
+8.4  SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF
+     INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION MAY
+     NOT APPLY TO YOU IN FULL. IN SUCH JURISDICTIONS, LICENSOR'S
+     LIABILITY IS LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+
+================================================================================
+9. INDEMNIFICATION
+================================================================================
+
+9.1  Licensee shall defend, indemnify, and hold harmless Licensor, its
+     officers, members, employees, agents, and contributors (collectively,
+     the "Indemnified Parties") from and against any and all claims,
+     demands, actions, suits, proceedings, losses, damages, liabilities,
+     judgments, settlements, fines, penalties, costs, and expenses
+     (including reasonable attorneys' fees and court costs) arising out
+     of or in connection with:
+
+     (a) Licensee's use or misuse of the Software;
+     (b) Licensee's breach of this Agreement, including any breach of
+         the representations and warranties in Section 4;
+     (c) Licensee's use of the Software against any network, system, or
+         device that is not an Authorized Network;
+     (d) Licensee's violation of any law, regulation, or third-party
+         right;
+     (e) any network outage, service disruption, or damage caused by
+         Licensee's use of the Software.
+
+9.2  Licensor reserves the right, at its own expense, to assume the
+     exclusive defense and control of any matter subject to
+     indemnification by Licensee, in which case Licensee shall cooperate
+     with Licensor in asserting any available defenses.
+
+================================================================================
+10. NO SUPPORT OR MAINTENANCE OBLIGATION
+================================================================================
+
+10.1 The Software is provided without any obligation by Licensor to
+     provide support, maintenance, updates, upgrades, bug fixes,
+     security patches, or new versions.
+
+10.2 Licensor may, at its sole discretion and without notice, provide
+     updates, releases, or community responses to issues, but does so as
+     a courtesy and not as a contractual obligation.
+
+10.3 Licensor may discontinue the Software, in whole or in part, at any
+     time, for any reason, without notice and without liability.
+
+================================================================================
+11. THIRD-PARTY COMPONENTS
+================================================================================
+
+11.1 The Software includes open-source and third-party components,
+     data sets, and assets identified in the file
+     THIRD_PARTY_LICENSES.md distributed with the Software. Each such
+     component is licensed under its own terms, which are reproduced or
+     referenced in that file.
+
+11.2 To the extent any third-party component license conflicts with
+     this Agreement with respect to that component, the third-party
+     license shall govern that component only.
+
+11.3 Third-party product names, brand names, and logos referenced or
+     displayed within the Software (including import-source application
+     icons) are the property of their respective owners and are used for
+     identification purposes only. See NOTICE.md.
+
+================================================================================
+12. PRIVACY
+================================================================================
+
+12.1 The Software operates locally on Licensee's device. Licensor does
+     not collect telemetry, analytics, crash reports, or personal
+     information through the Software.
+
+12.2 The Software performs a single outbound HTTPS request at startup
+     to check for available updates by retrieving a static version file
+     from a public repository. No identifying information is
+     transmitted in this request.
+
+12.3 Certain tools within the Software perform outbound requests to
+     third-party services only when Licensee invokes them (for example,
+     IP geolocation and RDAP lookups). These are described in the file
+     SECURITY.md.
+
+12.4 Licensee acknowledges that any credentials, IP addresses, hostnames,
+     configurations, or other information Licensee enters into the
+     Software remain on Licensee's local device, including in a local
+     activity log described in SECURITY.md. Licensee is responsible for
+     safeguarding this local data.
+
+================================================================================
+13. TERM AND TERMINATION
+================================================================================
+
+13.1 This Agreement is effective upon Licensee's first download,
+     installation, or use of the Software and continues until terminated.
+
+13.2 Licensee may terminate this Agreement at any time by ceasing all
+     use of the Software and uninstalling and destroying all copies in
+     Licensee's possession or control.
+
+13.3 This Agreement terminates automatically and immediately upon any
+     breach by Licensee, without notice and without prejudice to any
+     other remedies available to Licensor.
+
+13.4 Upon termination, Licensee shall immediately cease all use of the
+     Software and destroy all copies in Licensee's possession or control.
+
+13.5 Sections 1, 3, 4, 5, 6, 7, 8, 9, 11, 12.4, 13.4, 14, 15, 16, 17, 18,
+     19, and 20 survive termination.
+
+================================================================================
+14. INTELLECTUAL PROPERTY
+================================================================================
+
+14.1 The Software is licensed, not sold. Licensor and its licensors
+     retain all right, title, and interest in and to the Software,
+     including all intellectual property rights, except for the limited
+     license expressly granted in Section 2.
+
+14.2 "Virtual IQ AI" and the Virtual IQ AI logo are trademarks of
+     Virtual IQ AI · USA. All other trademarks, service marks, product
+     names, and logos referenced in the Software or its documentation
+     are the property of their respective owners and are used for
+     identification purposes only, without any claim of affiliation or
+     endorsement.
+
+14.3 No rights are granted by implication, estoppel, or otherwise except
+     as expressly set forth in this Agreement.
+
+================================================================================
+15. GENERAL
+================================================================================
+
+15.1 The Software is provided free of charge and on an "as is" basis.
+     Licensor designates no particular forum, court, or venue, and does
+     not consent to the jurisdiction of any particular forum. Any matter
+     arising out of or relating to this Agreement or the Software is
+     subject to the disclaimers of warranty and the limitations of
+     liability set out above, which apply to the maximum extent permitted
+     by any law that is found to apply.
+
+15.2 If any provision of this Agreement is held invalid or unenforceable,
+     that provision shall be limited or removed to the minimum extent
+     necessary, and the remaining provisions shall remain in full force
+     and effect.
+
+15.3 Licensor's failure to enforce any provision of this Agreement is not
+     a waiver of that provision or of any other provision.
+
+15.4 This Agreement is the entire agreement between you and Licensor
+     regarding the Software and supersedes any prior understanding.
+
+15.3 The prevailing party in any action arising out of this Agreement
+     shall be entitled to recover its reasonable attorneys' fees and
+     court costs.
+
+================================================================================
+16. U.S. GOVERNMENT END USERS
+================================================================================
+
+The Software is "commercial computer software" and "commercial computer
+software documentation" as those terms are defined in 48 C.F.R. § 2.101.
+Any use, modification, reproduction, release, performance, display, or
+disclosure of the Software by or for the U.S. Government shall be
+governed solely by this Agreement.
+
+================================================================================
+17. INJUNCTIVE RELIEF
+================================================================================
+
+Licensee acknowledges that any breach of Sections 2, 3, or 14 may cause
+Licensor irreparable harm for which monetary damages would be inadequate.
+Licensor is entitled to seek injunctive and other equitable relief, in
+addition to any other available remedies, without the requirement of
+posting bond.
+
+================================================================================
+18. SEVERABILITY AND WAIVER
+================================================================================
+
+18.1 If any provision of this Agreement is held to be invalid, illegal,
+     or unenforceable, the remaining provisions remain in full force and
+     effect, and the invalid provision shall be reformed to the minimum
+     extent necessary to make it enforceable while preserving the
+     parties' original intent.
+
+18.2 No failure or delay by Licensor to enforce any provision of this
+     Agreement is a waiver of that provision or any other provision.
+
+================================================================================
+19. ASSIGNMENT
+================================================================================
+
+19.1 Licensee may not assign or transfer this Agreement or any rights
+     or obligations under it, by operation of law or otherwise, without
+     Licensor's prior written consent. Any attempted assignment in
+     violation of this Section is void.
+
+19.2 Licensor may freely assign this Agreement.
+
+================================================================================
+20. ENTIRE AGREEMENT
+================================================================================
+
+This Agreement is the entire agreement between Licensee and Licensor
+regarding the Software and supersedes all prior or contemporaneous
+communications, proposals, and understandings, whether oral or written.
+Any modification to this Agreement must be in writing and signed by an
+authorized representative of Licensor.
+
+================================================================================
+21. CONTACT
+================================================================================
+
+For questions about this Agreement, commercial-licensing inquiries, or
+authorized use cases beyond the scope of this license, contact:
+
+  Virtual IQ AI · USA
+  Email:    info@virtualiqai.com
+  Web:      https://github.com/virtualiqai
+  Releases: https://github.com/virtualiqai/viq_eng_toolset
+
+================================================================================
+
+© 2026 Virtual IQ AI · USA. All rights reserved.
+"Virtual IQ AI" is a trademark of Virtual IQ AI · USA.

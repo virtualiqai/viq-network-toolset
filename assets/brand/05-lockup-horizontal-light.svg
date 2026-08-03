@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240">
+  <!-- Mark -->
+  <g transform="translate(0,0)">
+    <line x1="83" y1="77.5" x2="83" y2="162.5" stroke="#0A0E1A" stroke-width="20" stroke-linecap="round"/>
+    <polygon points="83,31.5 96,39 96,54 83,61.5 70,54 70,39" fill="#2563EB"/>
+    <circle cx="140" cy="120" r="32" stroke="#0A0E1A" stroke-width="14" fill="none"/>
+    <line x1="172" y1="120" x2="172" y2="207.5" stroke="#0A0E1A" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Wordmark: Virtual IQ AI -->
+  <text 
+    x="260" 
+    y="140" 
+    font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif"
+    font-size="76"
+    font-weight="600"
+    letter-spacing="-2"
+    fill="#0A0E1A">Virtual IQ AI</text>
+</svg>
