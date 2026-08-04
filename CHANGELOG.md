@@ -5,6 +5,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and adhe
 
 ---
 
+## [3.0.2] — 2026-08-04
+
+### 🔎 BGP ASN Lookup — Registry-Neutral Data Source
+
+- ASN lookups now query the RIPE NCC's official public **RIPEstat** API
+  (`stat.ripe.net`) for holder, registry, country, and announced-prefix
+  counts, replacing a third-party security-tool API. Results were validated
+  against independent sources across all five regional registries (ARIN,
+  RIPE NCC, APNIC, LACNIC, AFRINIC); org and abuse contacts continue to come
+  from official registry RDAP.
+
 ## [3.0.1] — 2026-08-04
 
 ### 🎯 Measurement Accuracy — Internet Diagnostic Engine v2.2

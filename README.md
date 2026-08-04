@@ -13,7 +13,7 @@
 
 <br/>
 
-[![Version](https://img.shields.io/badge/version-3.0.1-2563EB?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
+[![Version](https://img.shields.io/badge/version-3.0.2-2563EB?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
 [![Channel](https://img.shields.io/badge/channel-STABLE-2563EB?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
 [![Beta](https://img.shields.io/badge/beta-virtualiqai%2Fviq--releases--beta-F59E0B?style=flat-square)](https://github.com/virtualiqai/viq-releases-beta)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
@@ -54,7 +54,7 @@ It is distributed as a single installer for Windows and macOS. Once installed, i
 | **Ping Sweep** | Sweep a CIDR for live hosts (capped at 254 hosts) | ICMP echo |
 | **DNS Lookup** | A, AAAA, CNAME, MX, NS, TXT, SOA, PTR records | DNS UDP/53 |
 | **WHOIS** | Domain and IP WHOIS lookup | TCP/43 |
-| **BGP ASN Lookup** | ASN owner and announced prefixes via RDAP | HTTPS RDAP (ARIN / RIPE / APNIC) |
+| **BGP ASN Lookup** | ASN owner, country, and announced-prefix counts via the RIPE NCC's public RIPEstat API, enriched with registry RDAP org/abuse data | HTTPS to stat.ripe.net + registry RDAP (ARIN / RIPE / APNIC) |
 | **MAC Address Lookup** | OUI vendor identification | Offline OUI table |
 
 ### Troubleshooting
