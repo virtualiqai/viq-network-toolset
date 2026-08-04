@@ -5,6 +5,52 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and adhe
 
 ---
 
+## [3.0.1] — 2026-08-04
+
+### 🎯 Measurement Accuracy — Internet Diagnostic Engine v2.2
+
+- Throughput now uses the same trimmed-mean methodology as leading speed-test
+  services, with adaptive test windows and probe-all/pick-fastest server
+  selection for both download and upload. Results validated side-by-side
+  against Ookla on the same links (download within ~0.1%, upload within ~2%
+  against an adjacent on-net server).
+- Real-time call-conditions verdicts (VoIP / video / remote desktop) come from
+  a TCP connect-RTT train instead of idle ICMP probes. This eliminates the
+  false POOR verdicts caused by Wi-Fi power-save wake latency — the report now
+  names that artifact explicitly when it is detected.
+- Gauges stream live samples from the first seconds of the test; a Stop button
+  was added to Ping Sweep with partial results.
+
+### 🩺 Honesty & Windows Fixes
+
+- **WLAN on Wi-Fi-less Windows machines:** Investigator and Wi-Fi Snapshot now
+  report "Wi-Fi cannot be assessed" (adapter absent or the WLAN AutoConfig
+  service stopped) instead of a false HEALTHY verdict scored from Ethernet.
+- **User Guide on Windows:** the guide is now bundled in the installer — the
+  Help button and nav item no longer 404.
+- **Port Map:** trunk/access Mode is now read from the correct SNMP trunking
+  status (it was inverted on IOS/IOS-XE switches whose trunks use a hardened
+  native VLAN); sessions left idle for hours self-heal their security token.
+- Every tool page shows a **"Collected \<date time\>"** stamp so results
+  reopened later are never mistaken for fresh data.
+
+## [3.0.0] — 2026-08-01
+
+### 🚀 Major Release
+
+- **WLAN Investigator suite:** one-button client-to-WAN Wi-Fi investigation
+  with a 9-layer verdict ladder, roaming logger, DHCP/RADIUS probes, AP
+  uplink checks, RF reference, and case history with exportable reports.
+- **Verdict-led PDF reporting** across every tool, with a standardized layout,
+  report IDs, and confidential markings.
+- **SSH terminal makeover:** profile grid with import from common clients,
+  tabbed sessions, and an encrypted credential vault.
+- **Internet Diagnostic overhaul**, standards-based jitter analysis (RFC 5481
+  PDV, ITU-T Y.1541 classes), and a full field-test hardening round on
+  Windows and macOS.
+- Full Windows CI test gate: the complete backend + UI suite now runs on
+  Windows before any installer is published.
+
 ## [2.6.20] — 2026-05-22
 
 ### 🔌 Windows SCP Push From Cisco IOS Now Works End-to-End
