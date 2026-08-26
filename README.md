@@ -13,7 +13,7 @@
 
 <br/>
 
-[![Version](https://img.shields.io/badge/version-3.0.2-2563EB?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
+[![Version](https://img.shields.io/badge/version-3.0.3-2563EB?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
 [![Channel](https://img.shields.io/badge/channel-STABLE-2563EB?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
 [![Beta](https://img.shields.io/badge/beta-virtualiqai%2Fviq--releases--beta-F59E0B?style=flat-square)](https://github.com/virtualiqai/viq-releases-beta)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
@@ -40,7 +40,9 @@ Virtual IQ AI NetOps Toolset is a desktop network operations workbench built by 
 
 It is distributed as a single installer for Windows and macOS. Once installed, it launches in your default browser at a private loopback address and exposes its full tool catalog through a clean, dark-themed interface.
 
-> **New in the 3.0 stable line:** the full **WLAN Investigator** suite (Wi-Fi diagnostics, roaming, DHCP, RADIUS, AP uplink, RF reference), **verdict-led PDF reporting across every tool**, and an **Internet Diagnostic measurement engine** aligned with industry speed-test methodology. Early access to what's next ships in the [**beta channel**](https://github.com/virtualiqai/viq-releases-beta).
+> **New in 3.0.3:** a **security hardening release** — the localhost API boundary, credential vault, file-transfer containment, and report/export rendering were all tightened following a full audit of the 3.0.x line, and Config Audit PDF exports now redact device secrets. Ships alongside an independent network-architect review that corrected nine misreported results across the toolset. **Everyone on 3.0.2 or earlier should upgrade.**
+>
+> **The 3.0 stable line** brings the full **WLAN Investigator** suite (Wi-Fi diagnostics, roaming, DHCP, RADIUS, AP uplink, RF reference), **verdict-led PDF reporting across every tool**, and an **Internet Diagnostic measurement engine** aligned with industry speed-test methodology. Early access to what's next ships in the [**beta channel**](https://github.com/virtualiqai/viq-releases-beta).
 
 ---
 
