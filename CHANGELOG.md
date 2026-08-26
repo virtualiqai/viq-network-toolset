@@ -5,6 +5,113 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and adhe
 
 ---
 
+## [3.0.3] — 2026-08-26
+
+Promoted from the `3.0.3-beta.1` and `3.0.3-beta.2` betas. **Everyone on 3.0.2 or
+earlier should move to this build** — it carries the 3.0.x security remediation.
+
+> **Upgrading on Windows:** close VIQ Engineer Toolset before running the
+> installer. The application locks its own program file while running, and the
+> installer will stop with "Error opening file for writing" if it is still open.
+> A running-process check is coming in the next release.
+
+### 🔐 Security hardening
+
+This release is the remediation build from the 3.0.x security audit. It tightens
+the localhost API boundary, credential handling, file-transfer containment,
+subprocess argument safety, report and export rendering, and the build/release
+pipeline.
+
+- **Localhost API isolation.** The backend now enforces a loopback `Host`
+  allowlist, rejects null-origin requests, and requires CSRF tokens on
+  state-changing routes — so a page open in your browser cannot reach the
+  toolset's local API. (VIQ-SEC-001, 001b, 002, 013)
+- **Credential vault.** Vault unlock attempts are rate-limited, and the update
+  download URL is restricted to a known destination. (VIQ-SEC-026, 035)
+- **Logging and data at rest.** Request bodies are redacted *before* truncation
+  rather than after, the redacted field set was broadened, vault and switch
+  bodies are skipped entirely, non-JSON and oversized bodies are never stored
+  raw, and the data directory is created `0700`. (VIQ-SEC-008, 022, 023)
+- **File-transfer containment.** The SCP/SFTP server resolves symlinks before
+  enforcing its root boundary, and inbound connections are throttled against
+  brute force. (VIQ-SEC-004, 012)
+- **Command and argument safety.** Option-like usernames and `--` separators are
+  rejected in the SSH fallback path, and WHOIS targets are validated before use.
+  (VIQ-SEC-014, 024)
+- **Resource bounds.** Ping-sweep and port-scan ranges are bounded before
+  expansion, so a large input can no longer exhaust memory. (VIQ-SEC-011)
+- **Reports and exports.** Report print popups use a nonce-based
+  Content-Security-Policy with attribute-safe escaping, and the Sweep and Roam
+  CSV exporters neutralize spreadsheet formula injection. (VIQ-SEC-003, 010,
+  028, 029)
+- **Config Audit PDF export.** Changed configuration lines are now redacted
+  before they reach the exported report: `enable secret`, `username secret`,
+  SNMP communities, TACACS/RADIUS keys, NTP authentication keys, HSRP/VRRP/GLBP
+  authentication, IPsec pre-shared keys, and NX-OS `snmp-server user` auth/priv
+  values no longer leave your machine in a PDF. The on-screen side-by-side view
+  is unchanged.
+- **Privacy.** Inter and JetBrains Mono are now vendored locally — the
+  application no longer contacts Google Fonts. (VIQ-SEC-009)
+- **Windows installer.** The installer's finish page launches the application
+  de-elevated instead of inheriting installer privileges. (VIQ-SEC-017)
+- **Dependencies and build pipeline.** CVE-flagged dependencies were floored to
+  safe versions, CI workflow tokens reduced to least privilege, and all GitHub
+  Actions pinned to commit SHAs. (VIQ-SEC-018, 020, 021)
+
+### 🎯 Verdict accuracy — independent network-architect review
+
+- **Nine misreported results corrected** across tools — including SSL grading
+  that failed healthy STARTTLS servers on a transient handshake hiccup, AP-uplink
+  status, DHCP scope matching, and SockPerf sample counting.
+- **Wi-Fi 6E** channel-width reporting is disambiguated, co-channel interference
+  is judged **per band**, and an unknown channel width is disclosed instead of
+  guessed.
+- **Windows tracert** parsing reads all three probes per hop, so partial loss at
+  a hop is visible instead of silently dropped.
+- **IPv6-only hosts** are reported as "IPv6-only — not tested" rather than
+  falsely DOWN.
+- **SSL Check** grades an unreachable endpoint **"unknown"** instead of **F** —
+  no evidence, no verdict. F still means a real TLS failure.
+- **MTR / Trace:** silent hops (routers that answer no trace probes) are no
+  longer counted as 100% loss — they are disclosed separately, so "Max Loss"
+  reflects only responding hops and agrees with the "Destination reached"
+  verdict.
+- **MTR per-hop loss on macOS:** a hop that dropped some — but not all — of its
+  probes reported 0% loss, and its best/avg/worst ignored every reply after the
+  gap. Partial loss is now counted on macOS and Linux exactly as it already was
+  on Windows.
+- **MTR report header** now states the probes per hop actually sent (3) instead
+  of the number requested.
+
+### 🔎 Tools and reports
+
+- **SNMP Port Mapper:** the Errors column now shows an error **rate**
+  (errors/min between your last two scans) instead of the cumulative
+  since-boot total, so a port repaired months ago no longer reads as degraded
+  forever. Counter wrap and device reboots are detected (shown as
+  reset/baseline, never fabricated). The lifetime total remains in the cell
+  tooltip. *The first scan after upgrading establishes the baseline.*
+- **Switch Health:** modular chassis fan trays (Catalyst 9400/9600 "Fantray")
+  are now detected — these chassis previously reported "no fans".
+- **SSH session import:** the tool tiles (SecureCRT, PuTTY, MobaXterm, ~/.ssh,
+  CSV, JSON) are clickable and pre-filter the file picker to that tool's format.
+- **WHOIS** now honors its "Domain or IP" label: IP lookups parse registry
+  answers (Net Range, CIDR, Organization, Abuse Contact, …) and a Raw WHOIS
+  Excerpt panel was added.
+- **ASN Lookup** accepts real BGP ASNs only — asplain (`13335`) or asdot
+  (`1.2`), 2-byte and 4-byte ranges — with clear guidance on invalid input.
+- **Ping report** now includes the Latency Over Time graph the live view
+  already showed.
+- **Report pagination:** sections no longer strand a near-blank page before
+  their content in printed/PDF reports.
+
+### Fixed
+
+- The macOS app bundle stamps its real version (Finder previously showed
+  `0.0.0`; the running app was unaffected).
+- The in-app **User Guide** stamps its version from the build and defaults its
+  channel to match the running build, instead of showing a stale value.
+
 ## [3.0.2] — 2026-08-04
 
 ### 🔎 BGP ASN Lookup — Registry-Neutral Data Source
