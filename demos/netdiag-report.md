@@ -22,9 +22,9 @@ Open **Troubleshooting → NetDiag Report**, enter the target, leave all six tes
 
 <img src="media/netdiag-report/01-open.png" width="960" alt="NetDiag before a run: six test toggles (DNS, Ping, MTR, Port Scan, MSS/MTU, SSL/TLS), the target field reading dns.google, a report title, and the Run Tests button">
 
-<img src="media/netdiag-report/run.gif" width="960" alt="Animated: clicking Run Tests, the banner switching to running, then the seven summary cards and the DNS, ping, path, port, MTU and TLS sections appearing one after another, ending on the green healthy verdict. Shown at about five times speed.">
+<img src="media/netdiag-report/run.gif" width="960" alt="Animated: clicking Run Tests, the banner switching to running, then the seven summary cards and the DNS, ping, path, port, MTU and TLS sections appearing one after another, ending on the green healthy verdict. The first seconds real time, the rest at about four times speed.">
 
-Shown at about 5× speed; a full run takes well under a minute.
+The first seconds are real time, the rest at about 4× speed; a full run takes well under a minute.
 
 ## Reading the result
 
@@ -36,9 +36,9 @@ Shown at about 5× speed; a full run takes well under a minute.
 
 **Ping / Latency.** Minimum, average and maximum round-trip time and packet loss to the target.
 
-<img src="media/netdiag-report/12-section.png" width="960" alt="MTR Path Analysis: ten hops with loss, average, best and worst milliseconds per hop; two transit hops showing partial loss; a footnote explaining that transit-hop loss is informational because routers rate-limit ICMP replies">
+<img src="media/netdiag-report/12-section.png" width="960" alt="MTR Path Analysis: ten hops with loss, average, best and worst milliseconds per hop, every hop at 0% loss, ending at the resolved address">
 
-**MTR Path Analysis.** Every hop to the target with loss and best / average / worst latency. Loss on a transit hop that does not continue to the destination is a router rate-limiting its ICMP replies, not path loss; the footnote under the table says so and the verdict is taken from the destination, where loss was 0% here.
+**MTR Path Analysis.** Every hop to the target with loss and best / average / worst latency; the verdict is taken from the destination row. Loss on a transit hop that does not continue to the destination is a router rate-limiting its ICMP replies, not path loss; when a run shows it, a footnote under the table says so.
 
 <img src="media/netdiag-report/13-section.png" width="960" alt="Port Reachability: ports 22, 25, 53, 80, 443 and 3389 with open or filtered status and response time for the open ones">
 
