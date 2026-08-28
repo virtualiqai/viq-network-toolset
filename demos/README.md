@@ -9,7 +9,9 @@ One page per tool: the question it answers, a first run step by step, a short re
 | MTR / Traceroute | Where on the path does latency or loss begin, and whose network is it? | [mtr-traceroute.md](mtr-traceroute.md) |
 | SSL / TLS Inspector | Is the certificate on this host valid, who issued it, when does it expire, and what did the handshake negotiate? | [ssl-tls-inspector.md](ssl-tls-inspector.md) |
 | WLAN Investigator | Is the Wi-Fi the reason this laptop's connection is bad, and if so, at which layer? | [wlan-investigator.md](wlan-investigator.md) |
+| TCP Ping | Does this host answer on this port right now, and how consistently? | [tcp-ping.md](tcp-ping.md) |
+| SSH Terminal | Can you reach a device's command line from the toolset, with host-key checks, saved sessions and keys? | [ssh-terminal.md](ssh-terminal.md) |
 
-More pages follow in this order: Config Audit, SNMP Port Mapper, Switch Health.
+More pages follow when a lab device is available: SNMP Port Mapper, Switch Health.
 
 Virtual IQ AI · USA

@@ -58,6 +58,8 @@ Each demo shows a real run of the shipped build: what the tool answers, how to r
 | <a href="./demos/mtr-traceroute.md"><img src="./demos/media/mtr-traceroute/thumb.gif" width="360" alt="MTR run: the hop table filling in hop by hop with loss, latency and a quality pill per hop"></a> | **[MTR / Traceroute](./demos/mtr-traceroute.md)**<br>Where on the path does latency or loss begin, and whose network is it? Hop-by-hop loss and latency with reverse DNS and ASN per hop, and a report for the ticket. |
 | <a href="./demos/ssl-tls-inspector.md"><img src="./demos/media/ssl-tls-inspector/thumb.gif" width="360" alt="SSL / TLS Inspector run: the certificate analysis with an A+ grade, negotiated protocol and subject alternative names appearing for github.com"></a> | **[SSL / TLS Inspector](./demos/ssl-tls-inspector.md)**<br>Is the certificate on this host valid, who issued it, when does it expire, and what did the handshake negotiate? One handshake from the workstation, graded, with a report. |
 | <a href="./demos/wlan-investigator.md"><img src="./demos/media/wlan-investigator/thumb.gif" width="360" alt="WLAN Investigator run: the evidence ladder ticking through link, DHCP, DNS, WAN, captive portal and gateway checks, then a HEALTHY verdict with the layer ladder"></a> | **[WLAN Investigator](./demos/wlan-investigator.md)**<br>Is the Wi-Fi the reason this laptop's connection is bad, and if so, at which layer? One run from the client, nine layers from radio to WAN, ranked root causes, a ticket-ready report. |
+| <a href="./demos/tcp-ping.md"><img src="./demos/media/tcp-ping/thumb.gif" width="360" alt="TCP Ping run: tiles, a latency chart and an attempts table filling one handshake per second against github.com:443"></a> | **[TCP Ping](./demos/tcp-ping.md)**<br>Does this host answer on this port right now, and how consistently? One handshake per attempt where ICMP is filtered, with latency, jitter and loss, and a report. |
+| <a href="./demos/ssh-terminal.md"><img src="./demos/media/ssh-terminal/thumb.gif" width="360" alt="SSH Terminal run: the connection ladder stopping at the host-key prompt, then a live shell with commands typed and answered"></a> | **[SSH Terminal](./demos/ssh-terminal.md)**<br>Can you reach a device's command line from the toolset, with host-key checks, saved sessions and keys? Tabs, vaults and snippets beside the tools that pointed you at the device. |
 
 More demos: [demos/](./demos/README.md).
 
@@ -83,7 +85,7 @@ More demos: [demos/](./demos/README.md).
 | **NetDiag Report** | Streaming combined DNS + ping + MTR + port scan + MSS probe + SSL diagnostics for a single host — [demo](./demos/netdiag-report.md) | SSE (Server-Sent Events); mix of ICMP, TCP, DNS, TLS |
 | **Ping** | Single-host ICMP ping | System ping |
 | **MTR / Traceroute** | Hop-by-hop latency and loss — [demo](./demos/mtr-traceroute.md) | System mtr or traceroute |
-| **TCP Ping** | Handshake-based reachability and latency to a host:port, useful where ICMP is filtered | TCP connect |
+| **TCP Ping** | Handshake-based reachability and latency to a host:port, useful where ICMP is filtered — [demo](./demos/tcp-ping.md) | TCP connect |
 | **fping** | Parallel multi-host ping (capped at 20 hosts) | System fping |
 | **Port Scanner** | Native per-host TCP/UDP port check with banner grab (capped at 100 ports). Replaces the former **Nmap Scanner** - no external `nmap` binary is required | Native TCP connect / UDP probe |
 | **Switch Health** | Runs a strict allowlist of `show` commands over SSH and parses CPU, temperature, fans, PSU, and uptime; auto-detects IOS-XE vs NX-OS and runs the correct environment command. Hard-blocked from `configure`, `reload`, `clear`, `copy`, `write`, `erase` | SSH TCP/22 (read-only) |
@@ -95,7 +97,7 @@ More demos: [demos/](./demos/README.md).
 |---|-------|----|
 | **SSL / TLS Inspector** | Certificate chain, expiry, ciphers, SANs, and negotiated protocol versions — [demo](./demos/ssl-tls-inspector.md) | TLS handshake |
 | **Ncat / Netcat** | Reference and command-builder UI | Informational only |
-| **SSH Terminal** | In-browser xterm.js terminal to a target device (password, RSA, Ed25519, ECDSA, or DSS key, with a system-`ssh` fallback) | SSH TCP/22 |
+| **SSH Terminal** | In-browser xterm.js terminal to a target device (password, RSA, Ed25519, ECDSA, or DSS key, with a system-`ssh` fallback) — [demo](./demos/ssh-terminal.md) | SSH TCP/22 |
 | **SCP / SFTP Server** | Runs a local SFTP/SCP server so devices can push configurations to the workstation; native folder picker on both macOS (Finder) and Windows (Explorer) for the root directory | SSH TCP (configurable port) |
 
 ### Performance
