@@ -23,7 +23,7 @@
 <br/>
 
 [**⬇ Download Latest Release**](https://github.com/virtualiqai/viq-network-toolset/releases/latest) &nbsp;|&nbsp;
-[**🎬 Tool demos**](./docs/demos/README.md) &nbsp;|&nbsp;
+[**🎬 Tool demos**](./demos/README.md) &nbsp;|&nbsp;
 [**📋 Changelog**](./CHANGELOG.md) &nbsp;|&nbsp;
 [**🔐 Security & Privacy**](./SECURITY.md) &nbsp;|&nbsp;
 [**📜 Terms of Use**](./TERMS_OF_USE.md) &nbsp;|&nbsp;
@@ -47,6 +47,19 @@ It is distributed as a single installer for Windows and macOS. Once installed, i
 
 ---
 
+## Tool demos
+
+Each demo shows a real run of the shipped build: what the tool answers, how to run it, how to read the result, how to export it, and what to do when it doesn't work. Values that would identify the capturing machine are blurred.
+
+| | |
+|---|---|
+| <a href="./demos/internet-diagnostic.md"><img src="./demos/media/internet-diagnostic/thumb.gif" width="360" alt="Internet Diagnostic run: gauge cluster measuring download and upload, ending on a score"></a> | **[Internet Diagnostic](./demos/internet-diagnostic.md)**<br>Is this internet connection good enough for the work people do on it, and if not, what exactly is wrong? Per-workload verdicts (voice, video, VDI, backups) with the measurements behind them. |
+| <a href="./demos/netdiag-report.md"><img src="./demos/media/netdiag-report/thumb.gif" width="360" alt="NetDiag run: verdict banner, seven test cards and sections filling in for one target"></a> | **[NetDiag Report](./demos/netdiag-report.md)**<br>Is the network the problem for this one host? DNS, latency, path, ports, MTU and certificate in one run, one verdict, one report. |
+
+More demos: [demos/](./demos/README.md).
+
+---
+
 ## Tool Catalog
 
 ### Discovery
@@ -64,7 +77,7 @@ It is distributed as a single installer for Windows and macOS. Once installed, i
 
 | Tool | Description | Method |
 |---|-------|----|
-| **NetDiag Report** | Streaming combined DNS + ping + MTR + port scan + MSS probe + SSL diagnostics for a single host | SSE (Server-Sent Events); mix of ICMP, TCP, DNS, TLS |
+| **NetDiag Report** | Streaming combined DNS + ping + MTR + port scan + MSS probe + SSL diagnostics for a single host — [demo](./demos/netdiag-report.md) | SSE (Server-Sent Events); mix of ICMP, TCP, DNS, TLS |
 | **Ping** | Single-host ICMP ping | System ping |
 | **MTR / Traceroute** | Hop-by-hop latency and loss | System mtr or traceroute |
 | **TCP Ping** | Handshake-based reachability and latency to a host:port, useful where ICMP is filtered | TCP connect |
@@ -86,7 +99,7 @@ It is distributed as a single installer for Windows and macOS. Once installed, i
 
 | Tool | Description | Method |
 |---|-------|----|
-| **Internet Diagnostic (Speed Test)** | Streaming WAN speed test - multi-CDN download/upload throughput, idle vs loaded latency, DNS/path/MTU probes, a gauge cluster, and per-workload verdicts (VoIP, video calls, gaming, VDI, streaming, VPN, and more) with root-cause findings — [demo](./docs/demos/internet-diagnostic.md) | SSE; HTTPS to public speed-test endpoints |
+| **Internet Diagnostic (Speed Test)** | Streaming WAN speed test - multi-CDN download/upload throughput, idle vs loaded latency, DNS/path/MTU probes, a gauge cluster, and per-workload verdicts (VoIP, video calls, gaming, VDI, streaming, VPN, and more) with root-cause findings — [demo](./demos/internet-diagnostic.md) | SSE; HTTPS to public speed-test endpoints |
 | **SockPerf** | TCP and UDP latency and throughput probe with built-in listener mode | TCP/UDP socket |
 | **Bandwidth Calculator** | Throughput, transfer-time, and link-utilization math | Offline |
 | **MSS Calculator** | Path MTU/MSS dual-probe (jumbo 9000 and standard 1500, DF-bit) - classifies jumbo, standard, tunnel-overhead, or fragmented paths | ICMP DF-bit probe |
