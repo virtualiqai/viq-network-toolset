@@ -23,6 +23,7 @@
 <br/>
 
 [**⬇ Download Latest Release**](https://github.com/virtualiqai/viq-network-toolset/releases/latest) &nbsp;|&nbsp;
+[**🎬 Tool demos**](./docs/demos/README.md) &nbsp;|&nbsp;
 [**📋 Changelog**](./CHANGELOG.md) &nbsp;|&nbsp;
 [**🔐 Security & Privacy**](./SECURITY.md) &nbsp;|&nbsp;
 [**📜 Terms of Use**](./TERMS_OF_USE.md) &nbsp;|&nbsp;
@@ -85,7 +86,7 @@ It is distributed as a single installer for Windows and macOS. Once installed, i
 
 | Tool | Description | Method |
 |---|-------|----|
-| **Internet Diagnostic (Speed Test)** | Streaming WAN speed test - multi-CDN download/upload throughput, idle vs loaded latency, DNS/path/MTU probes, a gauge cluster, and per-workload verdicts (VoIP, video calls, gaming, VDI, streaming, VPN, and more) with root-cause findings | SSE; HTTPS to public speed-test endpoints |
+| **Internet Diagnostic (Speed Test)** | Streaming WAN speed test - multi-CDN download/upload throughput, idle vs loaded latency, DNS/path/MTU probes, a gauge cluster, and per-workload verdicts (VoIP, video calls, gaming, VDI, streaming, VPN, and more) with root-cause findings — [demo](./docs/demos/internet-diagnostic.md) | SSE; HTTPS to public speed-test endpoints |
 | **SockPerf** | TCP and UDP latency and throughput probe with built-in listener mode | TCP/UDP socket |
 | **Bandwidth Calculator** | Throughput, transfer-time, and link-utilization math | Offline |
 | **MSS Calculator** | Path MTU/MSS dual-probe (jumbo 9000 and standard 1500, DF-bit) - classifies jumbo, standard, tunnel-overhead, or fragmented paths | ICMP DF-bit probe |
