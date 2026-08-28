@@ -5,6 +5,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and adhe
 
 ---
 
+## 3.1.1 — 2026-08-28
+
+- Fixes the version shown on the About page and used by the update check; new installs now default to the stable channel as intended.
+- No tool behaviour changes since 3.1.0.
+
 ## 3.1.0 — 2026-08-28
 
 - Windows installer removes any earlier installation before installing (no duplicate entries in Add/Remove Programs).

@@ -13,7 +13,7 @@
 
 <br/>
 
-[![Version](https://img.shields.io/badge/version-3.1.0-2563EB?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset/releases)
+[![Version](https://img.shields.io/badge/version-3.1.1-2563EB?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset/releases)
 [![Channel](https://img.shields.io/badge/channel-STABLE-2563EB?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset/releases)
 [![Beta](https://img.shields.io/badge/beta-virtualiqai%2Fviq--network--toolset--beta-F59E0B?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset-beta)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset/releases)
@@ -40,7 +40,7 @@ VIQ Network Toolset is a desktop network operations workbench built by a working
 
 It is distributed as a single installer for Windows and macOS. Once installed, it launches in your default browser at a private loopback address and exposes its full tool catalog through a clean, dark-themed interface.
 
-> **3.1.0 is the current stable release.** It carries the hardened localhost API boundary, encrypted credential vault, contained file transfer and redacted Config Audit exports from the 3.0 security work, and the Windows installer now removes any earlier installation before installing. Everyone on 3.0.x should upgrade.
+> **3.1.1 is the current stable release.** It carries the hardened localhost API boundary, encrypted credential vault, contained file transfer and redacted Config Audit exports from the 3.0 security work, and the Windows installer now removes any earlier installation before installing. Everyone on 3.0.x should upgrade.
 >
 > **The 3.0 stable line** brings the full **WLAN Investigator** suite (Wi-Fi diagnostics, roaming, DHCP, RADIUS, AP uplink, RF reference), **verdict-led PDF reporting across every tool**, and an **Internet Diagnostic measurement engine** aligned with industry speed-test methodology. Early access to what's next ships in the [**beta channel**](https://github.com/virtualiqai/viq-network-toolset-beta).
 
