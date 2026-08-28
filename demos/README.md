@@ -7,7 +7,8 @@ One page per tool: the question it answers, a first run step by step, a short re
 | Internet Diagnostic | Is this internet connection good enough for the work people do on it, and if not, what exactly is wrong? | [internet-diagnostic.md](internet-diagnostic.md) |
 | NetDiag Report | Is the network the problem for this one host? DNS, latency, path, ports, MTU and certificate in one run, one verdict. | [netdiag-report.md](netdiag-report.md) |
 | MTR / Traceroute | Where on the path does latency or loss begin, and whose network is it? | [mtr-traceroute.md](mtr-traceroute.md) |
+| SSL / TLS Inspector | Is the certificate on this host valid, who issued it, when does it expire, and what did the handshake negotiate? | [ssl-tls-inspector.md](ssl-tls-inspector.md) |
 
-More pages follow in this order: SSL / TLS Inspector, Switch Health, WLAN Investigator, Config Audit, SNMP Port Mapper.
+More pages follow in this order: Switch Health, WLAN Investigator, Config Audit, SNMP Port Mapper.
 
 Virtual IQ AI · USA

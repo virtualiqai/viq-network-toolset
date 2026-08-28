@@ -56,6 +56,7 @@ Each demo shows a real run of the shipped build: what the tool answers, how to r
 | <a href="./demos/internet-diagnostic.md"><img src="./demos/media/internet-diagnostic/thumb.gif" width="360" alt="Internet Diagnostic run: gauge cluster measuring download and upload, ending on a score"></a> | **[Internet Diagnostic](./demos/internet-diagnostic.md)**<br>Is this internet connection good enough for the work people do on it, and if not, what exactly is wrong? Per-workload verdicts (voice, video, VDI, backups) with the measurements behind them. |
 | <a href="./demos/netdiag-report.md"><img src="./demos/media/netdiag-report/thumb.gif" width="360" alt="NetDiag run: verdict banner, seven test cards and sections filling in for one target"></a> | **[NetDiag Report](./demos/netdiag-report.md)**<br>Is the network the problem for this one host? DNS, latency, path, ports, MTU and certificate in one run, one verdict, one report. |
 | <a href="./demos/mtr-traceroute.md"><img src="./demos/media/mtr-traceroute/thumb.gif" width="360" alt="MTR run: the hop table filling in hop by hop with loss, latency and a quality pill per hop"></a> | **[MTR / Traceroute](./demos/mtr-traceroute.md)**<br>Where on the path does latency or loss begin, and whose network is it? Hop-by-hop loss and latency with reverse DNS and ASN per hop, and a report for the ticket. |
+| <a href="./demos/ssl-tls-inspector.md"><img src="./demos/media/ssl-tls-inspector/thumb.gif" width="360" alt="SSL / TLS Inspector run: the certificate analysis with an A+ grade, negotiated protocol and subject alternative names appearing for github.com"></a> | **[SSL / TLS Inspector](./demos/ssl-tls-inspector.md)**<br>Is the certificate on this host valid, who issued it, when does it expire, and what did the handshake negotiate? One handshake from the workstation, graded, with a report. |
 
 More demos: [demos/](./demos/README.md).
 
@@ -91,7 +92,7 @@ More demos: [demos/](./demos/README.md).
 
 | Tool | Description | Method |
 |---|-------|----|
-| **SSL / TLS Inspector** | Certificate chain, expiry, ciphers, SANs, and negotiated protocol versions | TLS handshake |
+| **SSL / TLS Inspector** | Certificate chain, expiry, ciphers, SANs, and negotiated protocol versions — [demo](./demos/ssl-tls-inspector.md) | TLS handshake |
 | **Ncat / Netcat** | Reference and command-builder UI | Informational only |
 | **SSH Terminal** | In-browser xterm.js terminal to a target device (password, RSA, Ed25519, ECDSA, or DSS key, with a system-`ssh` fallback) | SSH TCP/22 |
 | **SCP / SFTP Server** | Runs a local SFTP/SCP server so devices can push configurations to the workstation; native folder picker on both macOS (Finder) and Windows (Explorer) for the root directory | SSH TCP (configurable port) |
