@@ -1,4 +1,4 @@
-VIRTUAL IQ AI NETOPS TOOLSET - END-USER LICENSE AGREEMENT
+VIQ NETWORK TOOLSET - END-USER LICENSE AGREEMENT
 
 Effective: upon your download, installation, or use of the Software.
 © 2026 Virtual IQ AI · USA. All rights reserved.
@@ -19,8 +19,7 @@ Use only, subject to the terms below.
 1. DEFINITIONS
 ================================================================================
 
-1.1  "Software" means the Virtual IQ AI NetOps Toolset (also distributed
-     under the filename "VIQ Engineer Toolset"), including the compiled
+1.1  "Software" means VIQ Network Toolset, including the compiled
      binary executables, installers, libraries, configuration files,
      documentation, sample content, updates, and any related materials
      distributed by Licensor.
@@ -480,7 +479,7 @@ authorized use cases beyond the scope of this license, contact:
   Virtual IQ AI · USA
   Email:    info@virtualiqai.com
   Web:      https://github.com/virtualiqai
-  Releases: https://github.com/virtualiqai/viq_eng_toolset
+  Releases: https://github.com/virtualiqai/viq-network-toolset
 
 ================================================================================
 

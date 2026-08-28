@@ -1,9 +1,9 @@
 # Third-Party Notices & Open-Source Component Acknowledgments
 
-**Product:** VIQ Engineer Toolset
+**Product:** VIQ Network Toolset
 **Publisher:** Virtual IQ AI · USA
 
-VIQ Engineer Toolset is a free, proprietary desktop application that **bundles** open-source software, publicly available data, and third-party brand icons. Each bundled component is used under the terms of its own license, summarized below. Where a license requires the full license text, that text is included with the distributed application and is also available from the upstream project. **For any component, the original upstream license text takes precedence over the summary in this document.**
+VIQ Network Toolset is a free, proprietary desktop application that **bundles** open-source software, publicly available data, and third-party brand icons. Each bundled component is used under the terms of its own license, summarized below. Where a license requires the full license text, that text is included with the distributed application and is also available from the upstream project. **For any component, the original upstream license text takes precedence over the summary in this document.**
 
 Versions below reflect the components actually bundled in the shipped (frozen) build unless marked as a build/declared dependency. If you believe a component is missing or misattributed, contact **info@virtualiqai.com** (subject `[LICENSE ATTRIBUTION]`).
 
@@ -118,7 +118,7 @@ This exception means the application's own code is not made subject to the GPL m
 ## Notices (required attribution text)
 
 ### IEEE OUI / MA-L registry
-> Portions of this product use the IEEE OUI (MA-L) registry made publicly available by the **IEEE Registration Authority** (https://standards-oui.ieee.org/) for the purpose of mapping MAC address prefixes to vendor names. IEEE is not affiliated with, and does not endorse, VIQ Engineer Toolset or Virtual IQ AI · USA.
+> Portions of this product use the IEEE OUI (MA-L) registry made publicly available by the **IEEE Registration Authority** (https://standards-oui.ieee.org/) for the purpose of mapping MAC address prefixes to vendor names. IEEE is not affiliated with, and does not endorse, VIQ Network Toolset or Virtual IQ AI · USA.
 
 ### "Unofficial SSH Logo" - CC BY 4.0
 > "Unofficial SSH Logo" by **Jessie Kirk** (2022), sourced from Wikimedia Commons, licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** - https://creativecommons.org/licenses/by/4.0/. The image is used to identify an SSH configuration import source; it may have been resized/recolored for display. This is a community logo and is not an official mark of the OpenSSH project.
@@ -143,8 +143,8 @@ This software links (dynamically, via Python's import system) to the following *
 
 1. Obtain or build a modified copy of the library.
 2. Locate the application's bundled libraries:
-   - **Windows:** `C:\Program Files\VIQ Engineer Toolset\_internal\`
-   - **macOS:** `/Applications/VIQ Engineer Toolset.app/Contents/Resources/` and `…/Contents/Frameworks/`
+   - **Windows:** `C:\Program Files\VIQ Network Toolset\_internal\`
+   - **macOS:** `/Applications/VIQ Network Toolset.app/Contents/Resources/` and `…/Contents/Frameworks/`
 3. Replace the corresponding files with your modified version.
 4. Relaunch the application.
 

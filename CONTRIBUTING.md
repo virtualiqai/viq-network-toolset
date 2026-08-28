@@ -1,6 +1,6 @@
 # Contributing & Feedback
 
-Virtual IQ AI NetOps Toolset is proprietary software. The source code is not publicly available and pull requests with code changes are not accepted.
+VIQ Network Toolset is proprietary software. The source code is not publicly available and pull requests with code changes are not accepted.
 
 However, the project benefits enormously from real-world feedback. The list below is how you can contribute meaningfully.
 
@@ -11,7 +11,7 @@ However, the project benefits enormously from real-world feedback. The list belo
 Found something broken? Please file a report so it can be reproduced and fixed.
 
 **Where to file:**
-- **Public bug:** [GitHub Issues](https://github.com/virtualiqai/viq_eng_toolset/issues/new)
+- **Public bug:** [GitHub Issues](https://github.com/virtualiqai/viq-network-toolset/issues/new)
 - **Security vulnerability:** Do **not** file publicly. See [SECURITY.md](./SECURITY.md) for the private disclosure process.
 
 **What to include:**
@@ -89,7 +89,7 @@ For general questions or usage help:
 
 ## 📜 Support Model
 
-Virtual IQ AI NetOps Toolset is provided **as is**, with no formal support obligation. That said:
+VIQ Network Toolset is provided **as is**, with no formal support obligation. That said:
 
 - The author actively responds to issues and feature requests when time allows
 - Bug fixes and improvements ship in subsequent releases

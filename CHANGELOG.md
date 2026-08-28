@@ -1,16 +1,22 @@
 # Changelog
 
-All notable changes to **Virtual IQ AI NetOps Toolset** are documented here.
+All notable changes to **VIQ Network Toolset** are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and adheres to [Semantic Versioning](https://semver.org/).
 
 ---
+
+## 3.1.0 — 2026-08-28
+
+- Windows installer removes any earlier installation before installing (no duplicate entries in Add/Remove Programs).
+- Release channels and download file names tidied; the built-in update check continues to work for existing installs.
+- No tool behaviour changes since 3.0.3.
 
 ## [3.0.3] — 2026-08-26
 
 Promoted from the `3.0.3-beta.1` and `3.0.3-beta.2` betas. **Everyone on 3.0.2 or
 earlier should move to this build** — it carries the 3.0.x security remediation.
 
-> **Upgrading on Windows:** close VIQ Engineer Toolset before running the
+> **Upgrading on Windows:** close VIQ Network Toolset before running the
 > installer. The application locks its own program file while running, and the
 > installer will stop with "Error opening file for writing" if it is still open.
 > A running-process check is coming in the next release.
@@ -189,13 +195,13 @@ A static `box-shadow` fallback now lives inside the same media query so the bran
 
 ### 🪵 `netops.log` Now Lands Where Users Can Find It
 
-The previous build's diagnostic logging never produced a file on Windows because the rotating file handler was writing into `%PROGRAMFILES%\VIQ Engineer Toolset\assets\` — an admin-only path. Python's `RotatingFileHandler` silently swallows `PermissionError` on first open, so the log appeared to be working with no on-disk evidence to debug from.
+The previous build's diagnostic logging never produced a file on Windows because the rotating file handler was writing into `%PROGRAMFILES%\VIQ Network Toolset\assets\` — an admin-only path. Python's `RotatingFileHandler` silently swallows `PermissionError` on first open, so the log appeared to be working with no on-disk evidence to debug from.
 
 v2.6.19 routes the log (and future runtime state) through a per-platform user-writable data directory:
 
-- **Windows:** `%LOCALAPPDATA%\VIQ Engineer Toolset\netops.log`
-- **macOS:** `~/Library/Application Support/VIQ Engineer Toolset/netops.log`
-- **Linux:** `$XDG_DATA_HOME/viq-engineer-toolset/netops.log` (default `~/.local/share/…`)
+- **Windows:** `%LOCALAPPDATA%\VIQ Network Toolset\netops.log`
+- **macOS:** `~/Library/Application Support/VIQ Network Toolset/netops.log`
+- **Linux:** `$XDG_DATA_HOME/viq-network-toolset/netops.log` (default `~/.local/share/…`)
 - Override available via the `NETOPS_DATA_DIR` environment variable.
 - Falls back to the original install-bundle path if the user dir can't be created.
 
@@ -221,7 +227,7 @@ This build adds:
 - Explicit `log.exception()` wrappers around the SFTP server's `open()` and the tracked-transfer file's `seek` / `read` / `write` / `close` so a full traceback (with `local_path`, `flags`, `pflags`, `parent_writable`, `bytes_so_far`) lands in `netops.log` regardless of which step throws.
 - A new explicit `seek()` method on the tracked file wrapper — previously `seek` slipped through `__getattr__`, hiding any seek-stage failure from the existing error-marking path.
 
-No behavior changes for users whose SCP/SFTP already works. After reproducing the Cisco error on Windows, send the most recent `netops.log` from `%PROGRAMFILES%\VIQ Engineer Toolset\netops.log` for diagnosis.
+No behavior changes for users whose SCP/SFTP already works. After reproducing the Cisco error on Windows, send the most recent `netops.log` from `%PROGRAMFILES%\VIQ Network Toolset\netops.log` for diagnosis.
 
 ---
 
@@ -290,7 +296,7 @@ This release consolidates ~15 iterative beta builds (v2.6.2 through v2.6.16) int
 
 ### 🔧 CI / build pipeline
 
-- **Workflow refactored to upload directly to `viq_eng_toolset`** — no intermediate GitHub Actions artifact storage. The free-tier 500 MB artifact quota was exhausted during the v2.6.x rapid-iteration cycle, blocking releases until the cache recalculated. The new pipeline has four jobs (`pre-release` → `build-macos` / `build-windows` in parallel → `finalize`) and is immune to the quota cliff.
+- **Workflow refactored to upload directly to `viq-network-toolset`** — no intermediate GitHub Actions artifact storage. The free-tier 500 MB artifact quota was exhausted during the v2.6.x rapid-iteration cycle, blocking releases until the cache recalculated. The new pipeline has four jobs (`pre-release` → `build-macos` / `build-windows` in parallel → `finalize`) and is immune to the quota cliff.
 - **SHA-256 checksums** are now generated in the `finalize` step from the actual uploaded artifacts (not intermediates), so they always match what users actually download.
 
 ### 🐛 Bug fixes / polish
@@ -335,7 +341,7 @@ This release introduces published download integrity verification.
 
 - **SHA-256 checksums published with every release.** A `SHA256SUMS.txt` file is now attached to each GitHub release alongside the DMG and Setup.exe. Users can verify the integrity of downloaded artifacts before installation:
   - macOS / Linux: `shasum -a 256 -c SHA256SUMS.txt`
-  - Windows: `Get-FileHash -Algorithm SHA256 VIQ-Engineer-Toolset-Setup.exe`
+  - Windows: `Get-FileHash -Algorithm SHA256 VIQ-Network-Toolset-Setup.exe`
 - All other functionality unchanged from v2.4.2.
 
 ---
@@ -344,7 +350,7 @@ This release introduces published download integrity verification.
 
 ### Initial Public Release
 
-This is the first publicly available release of Virtual IQ AI NetOps Toolset. The application has been under continuous development against production enterprise infrastructure prior to this public availability. Version 2.4.2 reflects the application's internal release history; the product debuts publicly at this version.
+This is the first publicly available release of VIQ Network Toolset. The application has been under continuous development against production enterprise infrastructure prior to this public availability. Version 2.4.2 reflects the application's internal release history; the product debuts publicly at this version.
 
 ### 🚀 Application Platform
 
@@ -442,7 +448,7 @@ This is the first publicly available release of Virtual IQ AI NetOps Toolset. Th
 
 Tracked, in no particular order:
 
-- **NetAI Platform** *(Q4 2026)* — Flagship AI-augmented network operations platform from Virtual IQ AI. Predictive incident detection, autonomous Level-1 alert triage, and natural-language network querying. Currently in active development.
+- **AI-augmented network operations platform** — from Virtual IQ AI. Predictive incident detection, autonomous Level-1 alert triage, and natural-language network querying. Currently in active development.
 - **Signed Windows installer** (Authenticode)
 - **Notarized macOS application** (Apple Developer ID + notarization)
 - **Encrypted credential vault** for frequently accessed targets

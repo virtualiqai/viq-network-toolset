@@ -1,32 +1,32 @@
 <div align="center">
 
-<img src="./assets/banners/github-readme-1280.png" alt="Virtual IQ AI NetOps Toolset" width="100%"/>
+<img src="./assets/banners/github-readme-1280.png" alt="VIQ Network Toolset — the network engineer's troubleshooting toolkit" width="100%"/>
 
 <br/>
 <br/>
 
-# Virtual IQ AI NetOps Toolset
+# VIQ Network Toolset
 
-### A Professional Engineer's Toolset for Modern Network Operations
+### The network engineer's troubleshooting toolkit
 
-**A self-contained desktop application bundling 30+ network discovery, troubleshooting, security, and performance tools - comparable in scope to enterprise engineer toolsets that retail for $1,500-$2,000 per seat, but free for personal and non-commercial use.**
+**VIQ Network Toolset** is the network engineer's troubleshooting toolkit from Virtual IQ AI — a desktop application that bundles 30+ tools: SNMP port mapping, ping, MTR/traceroute, TCP ping, DNS, WHOIS and BGP ASN lookup, SSL/TLS inspection, switch health, configuration audit, Wi-Fi/WLAN diagnostics, internet speed diagnostics, subnet calculator, SSH terminal and SCP/SFTP server — in one local installer for Windows and macOS. It runs entirely on the workstation, needs no cloud account, sends no telemetry, and is read-only toward network devices by design. Free for personal and non-commercial use.
 
 <br/>
 
-[![Version](https://img.shields.io/badge/version-3.0.3-2563EB?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
-[![Channel](https://img.shields.io/badge/channel-STABLE-2563EB?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
-[![Beta](https://img.shields.io/badge/beta-virtualiqai%2Fviq--releases--beta-F59E0B?style=flat-square)](https://github.com/virtualiqai/viq-releases-beta)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey?style=flat-square)](https://github.com/virtualiqai/viq_eng_toolset/releases)
+[![Version](https://img.shields.io/badge/version-3.1.0-2563EB?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset/releases)
+[![Channel](https://img.shields.io/badge/channel-STABLE-2563EB?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset/releases)
+[![Beta](https://img.shields.io/badge/beta-virtualiqai%2Fviq--network--toolset--beta-F59E0B?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset-beta)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey?style=flat-square)](https://github.com/virtualiqai/viq-network-toolset/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-red?style=flat-square)](./LICENSE)
 [![Use](https://img.shields.io/badge/use-Personal%20%2F%20Non--Commercial-2EA043?style=flat-square)](./TERMS_OF_USE.md)
 
 <br/>
 
-[**⬇ Download Latest Release**](https://github.com/virtualiqai/viq_eng_toolset/releases/latest) &nbsp;|&nbsp;
+[**⬇ Download Latest Release**](https://github.com/virtualiqai/viq-network-toolset/releases/latest) &nbsp;|&nbsp;
 [**📋 Changelog**](./CHANGELOG.md) &nbsp;|&nbsp;
 [**🔐 Security & Privacy**](./SECURITY.md) &nbsp;|&nbsp;
 [**📜 Terms of Use**](./TERMS_OF_USE.md) &nbsp;|&nbsp;
-[**💬 Report an Issue**](https://github.com/virtualiqai/viq_eng_toolset/issues)
+[**💬 Report an Issue**](https://github.com/virtualiqai/viq-network-toolset/issues)
 
 <br/>
 
@@ -36,13 +36,13 @@
 
 ## Overview
 
-Virtual IQ AI NetOps Toolset is a desktop network operations workbench built by a working network architect, for working network engineers. Every tool addresses a real operational task: discovery, troubleshooting, security verification, performance measurement, or day-to-day reference. The application runs entirely on your workstation, requires no cloud account, and performs all device interactions in real time against the targets you point it at.
+VIQ Network Toolset is a desktop network operations workbench built by a working network architect, for working network engineers. Every tool addresses a real operational task: discovery, troubleshooting, security verification, performance measurement, or day-to-day reference. The application runs entirely on your workstation, requires no cloud account, and performs all device interactions in real time against the targets you point it at.
 
 It is distributed as a single installer for Windows and macOS. Once installed, it launches in your default browser at a private loopback address and exposes its full tool catalog through a clean, dark-themed interface.
 
-> **New in 3.0.3:** a **security hardening release** — the localhost API boundary, credential vault, file-transfer containment, and report/export rendering were all tightened following a full audit of the 3.0.x line, and Config Audit PDF exports now redact device secrets. Ships alongside an independent network-architect review that corrected nine misreported results across the toolset. **Everyone on 3.0.2 or earlier should upgrade.**
+> **3.1.0 is the current stable release.** It carries the hardened localhost API boundary, encrypted credential vault, contained file transfer and redacted Config Audit exports from the 3.0 security work, and the Windows installer now removes any earlier installation before installing. Everyone on 3.0.x should upgrade.
 >
-> **The 3.0 stable line** brings the full **WLAN Investigator** suite (Wi-Fi diagnostics, roaming, DHCP, RADIUS, AP uplink, RF reference), **verdict-led PDF reporting across every tool**, and an **Internet Diagnostic measurement engine** aligned with industry speed-test methodology. Early access to what's next ships in the [**beta channel**](https://github.com/virtualiqai/viq-releases-beta).
+> **The 3.0 stable line** brings the full **WLAN Investigator** suite (Wi-Fi diagnostics, roaming, DHCP, RADIUS, AP uplink, RF reference), **verdict-led PDF reporting across every tool**, and an **Internet Diagnostic measurement engine** aligned with industry speed-test methodology. Early access to what's next ships in the [**beta channel**](https://github.com/virtualiqai/viq-network-toolset-beta).
 
 ---
 
@@ -110,7 +110,7 @@ It is distributed as a single installer for Windows and macOS. Once installed, i
 
 ## Reporting
 
-Many tools export a **Virtual IQ AI-branded PDF report** summarizing their findings. The fully standardized, color-coded, **verdict-led reporting suite that spans every tool** - plus real `.xlsx` export for MAC Address Lookup and the SNMP Port Mapper - is available now in the [3.0 beta channel](https://github.com/virtualiqai/viq-releases-beta) and will land on the stable line in a future release.
+Many tools export a **Virtual IQ AI-branded PDF report** summarizing their findings. The fully standardized, color-coded, **verdict-led reporting suite that spans every tool** - plus real `.xlsx` export for MAC Address Lookup and the SNMP Port Mapper - is available now in the [3.0 beta channel](https://github.com/virtualiqai/viq-network-toolset-beta) and will land on the stable line in a future release.
 
 ---
 
@@ -144,14 +144,14 @@ No Python installation, runtime, or other dependencies are required - everything
 
 ### Windows
 
-1. Download `VIQ-Engineer-Toolset-Setup.exe` from the [latest release](https://github.com/virtualiqai/viq_eng_toolset/releases/latest)
+1. Download `VIQ-Network-Toolset-Setup.exe` from the [latest release](https://github.com/virtualiqai/viq-network-toolset/releases/latest)
 2. Double-click the installer to launch
-3. Follow the prompts - the installer registers the application under **Add/Remove Programs** as **VIQ Engineer Toolset**
+3. Follow the prompts - the installer registers the application under **Add/Remove Programs** as **VIQ Network Toolset**
 4. Launch from the Start Menu - your default browser will open automatically
 
 ### macOS
 
-1. Download `VIQ-Engineer-Toolset.dmg` from the [latest release](https://github.com/virtualiqai/viq_eng_toolset/releases/latest)
+1. Download `VIQ-Network-Toolset.dmg` from the [latest release](https://github.com/virtualiqai/viq-network-toolset/releases/latest)
 2. Open the DMG and drag the application to your **Applications** folder
 3. Launch from Applications or Spotlight - your default browser will open automatically
 
@@ -174,7 +174,7 @@ After a small number of installs across the user community, SmartScreen will beg
 
 ### macOS - Gatekeeper
 
-On first launch you may see: *"VIQ Engineer Toolset cannot be opened because Apple cannot check it for malicious software"* or *"App is from an unidentified developer."*
+On first launch you may see: *"VIQ Network Toolset cannot be opened because Apple cannot check it for malicious software"* or *"App is from an unidentified developer."*
 
 **Option 1 - Right-click open:**
 1. In Applications, right-click (or Control-click) the app
@@ -207,10 +207,10 @@ If you close the browser without shutting down, simply reopen the application's 
 
 ## Privacy & Telemetry
 
-Virtual IQ AI NetOps Toolset is designed to be transparent about every outbound connection. Network traffic from the toolset itself falls into three categories:
+VIQ Network Toolset is designed to be transparent about every outbound connection. Network traffic from the toolset itself falls into three categories:
 
 1. **Targeted device traffic** - SNMP, SSH, ICMP, and TCP probes go directly to whatever device or host you point the tool at.
-2. **Version check (always-on at startup)** - A single HTTPS GET to either `raw.githubusercontent.com/virtualiqai/viq_eng_toolset/main/version.json` (stable channel) or `raw.githubusercontent.com/virtualiqai/viq-releases-beta/main/version.json` (beta channel) depending on the channel selected on the About page, to check whether a newer release is available. No system information, IP address, or identifier is sent.
+2. **Version check (always-on at startup)** - A single HTTPS GET to either `raw.githubusercontent.com/virtualiqai/viq-network-toolset/main/version.json` (stable channel) or `raw.githubusercontent.com/virtualiqai/viq-network-toolset-beta/main/version.json` (beta channel) depending on the channel selected on the About page, to check whether a newer release is available. No system information, IP address, or identifier is sent.
 3. **Opt-in third-party lookups (only when you click the tool)** - `api.ipify.org` and `ipwho.is` for the **IP Info** tool, and RDAP queries to `rdap.arin.net`, `rdap.db.ripe.net`, and `rdap.apnic.net` for **BGP ASN Lookup**.
 
 The application performs **no telemetry, no analytics, no crash reporting, and no usage tracking.** Full details are in [SECURITY.md](./SECURITY.md).
@@ -221,8 +221,7 @@ The application performs **no telemetry, no analytics, no crash reporting, and n
 
 Planned for future releases:
 
-- **WLAN Investigator suite & standardized reporting** - currently in the [3.0 beta channel](https://github.com/virtualiqai/viq-releases-beta); promotion to stable is planned.
-- **NetAI** - Virtual IQ AI's flagship AI-augmented network operations platform: predictive incident detection, autonomous Level-1 triage, and natural-language network querying. Currently in active development.
+- **AI-augmented network operations platform** - predictive incident detection, autonomous Level-1 triage, and natural-language network querying. In active development.
 - Signed Windows installer (Authenticode)
 - Notarized macOS application (Apple Developer ID)
 - Linux build
@@ -233,7 +232,7 @@ Planned for future releases:
 
 ## About Virtual IQ AI
 
-**Virtual IQ AI · USA** builds AI-augmented network operations tooling for working engineers. The toolset is designed and maintained by a practicing network architect with roughly two decades of hands-on experience across enterprise data centers, healthcare, and multi-cloud environments, and reflects real production operational needs rather than lab simulations. The NetOps Toolset is the first publicly released product; the NetAI platform follows (see Roadmap).
+**Virtual IQ AI · USA** builds AI-augmented network operations tooling for working engineers. The toolset is designed and maintained by a practicing network architect with roughly two decades of hands-on experience across enterprise data centers, healthcare, and multi-cloud environments, and reflects real production operational needs rather than lab simulations. VIQ Network Toolset is the first publicly released product; an AI-augmented network operations platform follows (see Roadmap).
 
 ---
 
@@ -254,8 +253,8 @@ This software is proprietary and distributed in compiled-binary form only. The s
 
 - **Email:** info@virtualiqai.com
 - **GitHub:** [github.com/virtualiqai](https://github.com/virtualiqai)
-- **Stable-channel issues & feature requests:** [github.com/virtualiqai/viq_eng_toolset/issues](https://github.com/virtualiqai/viq_eng_toolset/issues)
-- **Beta-channel issues:** [github.com/virtualiqai/viq-releases-beta/issues](https://github.com/virtualiqai/viq-releases-beta/issues)
+- **Stable-channel issues & feature requests:** [github.com/virtualiqai/viq-network-toolset/issues](https://github.com/virtualiqai/viq-network-toolset/issues)
+- **Beta-channel issues:** [github.com/virtualiqai/viq-network-toolset-beta/issues](https://github.com/virtualiqai/viq-network-toolset-beta/issues)
 
 ---
 

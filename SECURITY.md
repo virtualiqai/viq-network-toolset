@@ -1,8 +1,8 @@
 # Security & Privacy
 
-This document describes the security posture, privacy behavior, and data handling of Virtual IQ AI NetOps Toolset (also distributed as **VIQ Engineer Toolset**). We aim to be transparent about every outbound connection the software makes and every file it writes to disk.
+This document describes the security posture, privacy behavior, and data handling of VIQ Network Toolset. We aim to be transparent about every outbound connection the software makes and every file it writes to disk.
 
-The behavior described here applies to both release channels - the [stable channel](https://github.com/virtualiqai/viq_eng_toolset) and the [beta channel](https://github.com/virtualiqai/viq-releases-beta). Beta and stable builds are produced from the same source tree by the same CI pipeline and ship with the same encryption, redaction, and rate-limit guarantees. The only difference is maturity.
+The behavior described here applies to both release channels - the [stable channel](https://github.com/virtualiqai/viq-network-toolset) and the [beta channel](https://github.com/virtualiqai/viq-network-toolset-beta). Beta and stable builds are produced from the same source tree by the same CI pipeline and ship with the same encryption, redaction, and rate-limit guarantees. The only difference is maturity.
 
 ---
 
@@ -34,8 +34,8 @@ The security guarantees listed in the rest of this document - credential redacti
 
 | Channel | Repository | Status |
 |-----|------|----|
-| **Stable** | [`virtualiqai/viq_eng_toolset`](https://github.com/virtualiqai/viq_eng_toolset) | ✅ Active - production line |
-| **Beta** | [`virtualiqai/viq-releases-beta`](https://github.com/virtualiqai/viq-releases-beta) | ⚠️ Pre-release - for testing only |
+| **Stable** | [`virtualiqai/viq-network-toolset`](https://github.com/virtualiqai/viq-network-toolset) | ✅ Active - production line |
+| **Beta** | [`virtualiqai/viq-network-toolset-beta`](https://github.com/virtualiqai/viq-network-toolset-beta) | ⚠️ Pre-release - for testing only |
 
 Only the most recent build on each channel is considered supported. The beta release page retains up to three recent betas for downgrade comparisons, but security and bug fixes only land in the latest. Always download from the official release page - do not run binaries obtained from third-party mirrors or unofficial sources.
 
@@ -57,7 +57,7 @@ Only the most recent build on each channel is considered supported. The beta rel
   shasum -a 256 -c SHA256SUMS.txt
 
   # Windows (PowerShell)
-  Get-FileHash -Algorithm SHA256 VIQ-Engineer-Toolset-Setup.exe
+  Get-FileHash -Algorithm SHA256 VIQ-Network-Toolset-Setup.exe
   ```
 
 ### Roadmap
@@ -80,7 +80,7 @@ The application performs **no telemetry, no analytics, no crash reporting, and n
 
 | When | Destination | Purpose | Data Sent |
 |---|-------|-----|------|
-| Application startup | `raw.githubusercontent.com/virtualiqai/viq_eng_toolset/main/version.json` (stable) **OR** `raw.githubusercontent.com/virtualiqai/viq-releases-beta/main/version.json` (beta), depending on the channel selected on the About page (HTTPS) | Check whether a newer release is available on the active channel | None - only the HTTP request itself. No system information, IP address, machine identifier, or user identifier is transmitted in the request body. Standard HTTP headers are sent by the underlying OS/HTTP library. |
+| Application startup | `raw.githubusercontent.com/virtualiqai/viq-network-toolset/main/version.json` (stable) **OR** `raw.githubusercontent.com/virtualiqai/viq-network-toolset-beta/main/version.json` (beta), depending on the channel selected on the About page (HTTPS) | Check whether a newer release is available on the active channel | None - only the HTTP request itself. No system information, IP address, machine identifier, or user identifier is transmitted in the request body. Standard HTTP headers are sent by the underlying OS/HTTP library. |
 
 The version check happens once at startup with a short timeout. If the request fails, the application continues normally.
 
@@ -131,7 +131,7 @@ To clear the activity log on demand, open the application, navigate to **Activit
 
 ## Local Data Storage
 
-The application stores the following files on your local machine in a per-platform, user-writable data directory (Windows: `%LOCALAPPDATA%\VIQ Engineer Toolset\`; macOS: `~/Library/Application Support/VIQ Engineer Toolset/`; override via `NETOPS_DATA_DIR`):
+The application stores the following files on your local machine in a per-platform, user-writable data directory (Windows: `%LOCALAPPDATA%\VIQ Network Toolset\`; macOS: `~/Library/Application Support/VIQ Network Toolset/`; override via `NETOPS_DATA_DIR`):
 
 | File | Purpose | Retention |
 |---|-----|------|
@@ -222,7 +222,7 @@ If you discover a security vulnerability, please report it privately. **Do not o
 
 **Preferred channels:**
 - **Email:** security@virtualiqai.com (use the subject line `[SECURITY]`)
-- **GitHub:** Open a private security advisory on [the stable repo](https://github.com/virtualiqai/viq_eng_toolset/security/advisories/new) or [the beta repo](https://github.com/virtualiqai/viq-releases-beta/security/advisories/new) - whichever channel the issue applies to
+- **GitHub:** Open a private security advisory on [the stable repo](https://github.com/virtualiqai/viq-network-toolset/security/advisories/new) or [the beta repo](https://github.com/virtualiqai/viq-network-toolset-beta/security/advisories/new) - whichever channel the issue applies to
 
 **Please include:**
 1. A description of the vulnerability
