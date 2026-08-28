@@ -90,12 +90,13 @@ More demos: [demos/](./demos/README.md).
 | **Port Scanner** | Native per-host TCP/UDP port check with banner grab (capped at 100 ports). Replaces the former **Nmap Scanner** - no external `nmap` binary is required | Native TCP connect / UDP probe |
 | **Switch Health** | Runs a strict allowlist of `show` commands over SSH and parses CPU, temperature, fans, PSU, and uptime; auto-detects IOS-XE vs NX-OS and runs the correct environment command. Hard-blocked from `configure`, `reload`, `clear`, `copy`, `write`, `erase` | SSH TCP/22 (read-only) |
 | **Config Audit** | Static audit of a pasted device configuration (Cisco / Arista / NX-OS style) for weak SNMP communities, telnet, default credentials, and missing logging; side-by-side startup-vs-running diff | Local text analysis + SSH TCP/22 (read) |
+| **WLAN Investigator** | One-button, client-to-WAN Wi-Fi investigation from this machine: reads the link (SSID, BSSID, RSSI, SNR, channel, security), scans nearby networks, checks DHCP, DNS, gateway, WAN and captive portal, and issues a nine-layer verdict with ranked root causes and a ticket-ready report; optional RADIUS probe, AP-uplink (switch SNMP) and controller evidence deepen the infrastructure layers — [demo](./demos/wlan-investigator.md) | Local Wi-Fi API; DHCP, DNS, ICMP, TCP and HTTP probes; optional SNMP and RADIUS |
 
 ### Security
 
 | Tool | Description | Method |
 |---|-------|----|
-| **SSL / TLS Inspector** | Certificate chain, expiry, ciphers, SANs, and negotiated protocol versions — [demo](./demos/ssl-tls-inspector.md) | TLS handshake |
+| **SSL / TLS Inspector** | Certificate issuer, expiry and days remaining, the negotiated TLS version and cipher, Subject Alternative Names, and a grade for the handshake — [demo](./demos/ssl-tls-inspector.md) | TLS handshake |
 | **Ncat / Netcat** | Reference and command-builder UI | Informational only |
 | **SSH Terminal** | In-browser xterm.js terminal to a target device (password, RSA, Ed25519, ECDSA, or DSS key, with a system-`ssh` fallback) — [demo](./demos/ssh-terminal.md) | SSH TCP/22 |
 | **SCP / SFTP Server** | Runs a local SFTP/SCP server so devices can push configurations to the workstation; native folder picker on both macOS (Finder) and Windows (Explorer) for the root directory | SSH TCP (configurable port) |
