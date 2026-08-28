@@ -55,6 +55,7 @@ Each demo shows a real run of the shipped build: what the tool answers, how to r
 |---|---|
 | <a href="./demos/internet-diagnostic.md"><img src="./demos/media/internet-diagnostic/thumb.gif" width="360" alt="Internet Diagnostic run: gauge cluster measuring download and upload, ending on a score"></a> | **[Internet Diagnostic](./demos/internet-diagnostic.md)**<br>Is this internet connection good enough for the work people do on it, and if not, what exactly is wrong? Per-workload verdicts (voice, video, VDI, backups) with the measurements behind them. |
 | <a href="./demos/netdiag-report.md"><img src="./demos/media/netdiag-report/thumb.gif" width="360" alt="NetDiag run: verdict banner, seven test cards and sections filling in for one target"></a> | **[NetDiag Report](./demos/netdiag-report.md)**<br>Is the network the problem for this one host? DNS, latency, path, ports, MTU and certificate in one run, one verdict, one report. |
+| <a href="./demos/mtr-traceroute.md"><img src="./demos/media/mtr-traceroute/thumb.gif" width="360" alt="MTR run: the hop table filling in hop by hop with loss, latency and a quality pill per hop"></a> | **[MTR / Traceroute](./demos/mtr-traceroute.md)**<br>Where on the path does latency or loss begin, and whose network is it? Hop-by-hop loss and latency with reverse DNS and ASN per hop, and a report for the ticket. |
 
 More demos: [demos/](./demos/README.md).
 
@@ -79,7 +80,7 @@ More demos: [demos/](./demos/README.md).
 |---|-------|----|
 | **NetDiag Report** | Streaming combined DNS + ping + MTR + port scan + MSS probe + SSL diagnostics for a single host — [demo](./demos/netdiag-report.md) | SSE (Server-Sent Events); mix of ICMP, TCP, DNS, TLS |
 | **Ping** | Single-host ICMP ping | System ping |
-| **MTR / Traceroute** | Hop-by-hop latency and loss | System mtr or traceroute |
+| **MTR / Traceroute** | Hop-by-hop latency and loss — [demo](./demos/mtr-traceroute.md) | System mtr or traceroute |
 | **TCP Ping** | Handshake-based reachability and latency to a host:port, useful where ICMP is filtered | TCP connect |
 | **fping** | Parallel multi-host ping (capped at 20 hosts) | System fping |
 | **Port Scanner** | Native per-host TCP/UDP port check with banner grab (capped at 100 ports). Replaces the former **Nmap Scanner** - no external `nmap` binary is required | Native TCP connect / UDP probe |
