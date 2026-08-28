@@ -1,9 +1,9 @@
 {
   "channel": "stable",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "notes": "See release notes on GitHub",
   "downloads": {
-    "macos": "https://github.com/virtualiqai/viq_eng_toolset/releases/download/v3.0.3/VIQ-Engineer-Toolset.dmg",
-    "windows": "https://github.com/virtualiqai/viq_eng_toolset/releases/download/v3.0.3/VIQ-Engineer-Toolset-Setup.exe"
+    "macos": "https://github.com/virtualiqai/viq-network-toolset/releases/download/v3.1.0/VIQ-Network-Toolset.dmg",
+    "windows": "https://github.com/virtualiqai/viq-network-toolset/releases/download/v3.1.0/VIQ-Network-Toolset-Setup.exe"
   }
 }
