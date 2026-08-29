@@ -2,7 +2,7 @@
 
 *Applies whenever you download or use the Software. Free to use, as is, entirely at your own risk.*
 
-This is a plain-English summary of how you may use VIQ Network Toolset (also distributed as **VIQ Network Toolset**). The formal legal agreement is in [LICENSE](./LICENSE). If anything here conflicts with the LICENSE, the LICENSE controls.
+This is a plain-English summary of how you may use VIQ Network Toolset. The formal legal agreement is in [LICENSE](./LICENSE). If anything here conflicts with the LICENSE, the LICENSE controls.
 
 We wrote this because you deserve to understand what you're agreeing to, in language that doesn't require a law degree.
 

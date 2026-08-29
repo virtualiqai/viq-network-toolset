@@ -46,11 +46,12 @@ Only the most recent build on each channel is considered supported. The beta rel
 ### Current Status
 
 - **Windows installer** - **not currently code-signed.** Microsoft SmartScreen may display a warning on first launch. See *First-Run Warnings* below.
-- **macOS application** - built with conditional Apple Developer ID signing in the CI pipeline. Verification of the published DMG can be performed by running:
+- **macOS application** - **ad-hoc signed, not notarized.** The build carries an ad-hoc signature (no Apple Developer ID), so Gatekeeper refuses it on first launch until you right-click → Open. Confirm the signature and its ad-hoc status with:
   ```bash
-  spctl --assess --type execute --verbose /Applications/VIQ\ Engineer\ Toolset.app
-  codesign -dv /Applications/VIQ\ Engineer\ Toolset.app
+  codesign -dv --verbose=2 /Applications/VIQ\ Network\ Toolset.app        # Signature=adhoc, TeamIdentifier=not set
+  spctl --assess --type execute --verbose /Applications/VIQ\ Network\ Toolset.app   # reports "rejected" until notarized
   ```
+  The authoritative integrity check is the SHA-256 published on the GitHub release matching the file you downloaded.
 - **SHA-256 checksums** - **published with every release.** A `SHA256SUMS.txt` file is attached to each GitHub release alongside the DMG and Setup.exe. Verify with:
   ```bash
   # macOS / Linux
@@ -62,9 +63,15 @@ Only the most recent build on each channel is considered supported. The beta rel
 
 ### Roadmap
 
-A future release will include an Authenticode-signed Windows installer and a fully notarized macOS application (Apple Developer ID + notarization stapled to the DMG). Until then, please verify you are downloading directly from the official GitHub release page.
+Code signing is planned but not yet in place: a future release will add an Authenticode-signed Windows installer and a notarized macOS application (Apple Developer ID + stapled notarization). Until then, verify the SHA-256 and download only from the official GitHub release page.
 
 ---
+
+## Known Accepted Risks
+
+- **Legacy SSH algorithms (SHA-1 `ssh-rsa`).** To reach older network gear that offers nothing newer, the SSH client keeps `ssh-rsa` (SHA-1) available as a fallback; modern devices negotiate `rsa-sha2-256/512` automatically. This is a deliberate compatibility choice (advisory CVE-2026-44405, low severity, no upstream fix).
+- **WLAN report redaction.** "Redaction ON" masks MAC addresses (keeping the OUI), usernames/emails, and private (RFC 1918) IP addresses. It intentionally leaves the **SSID** and public IP addresses visible, because the SSID is required to read the diagnostic. Treat exported WLAN reports as sensitive.
+- **Local diagnostic paths.** The loopback-only `/api/health` endpoint reports your local log-file path and backend interpreter path, which the application also shows you in its own UI (Activity Log, About). These never leave your machine - the listener is bound to `127.0.0.1` and rejects non-loopback requests.
 
 ## First-Run Warnings
 
@@ -74,7 +81,7 @@ Independent software publishers without long-standing reputation will encounter 
 
 ## Privacy & Telemetry
 
-The application performs **no telemetry, no analytics, no crash reporting, and no usage tracking.** It does not contact any server other than those listed below.
+The application performs **no telemetry, no analytics, no crash reporting, and no usage tracking** - nothing about your usage is ever sent to Virtual IQ AI. Certain diagnostic tools do make outbound connections to third-party infrastructure, but only to the categories of destination listed below and only when you invoke the tool. Tools that target a device or host you name (ping, MTR/traceroute, SSL inspector, SSH, NetDiag) additionally connect to whatever you enter.
 
 ### Always-On Outbound Connections
 
@@ -93,6 +100,7 @@ These connections only happen when you invoke the specific tool:
 | **IP Info** | `api.ipify.org` (HTTPS) | Detect your public IPv4 address - only triggered if you leave the IP field blank |
 | **IP Info** | `ipwho.is` (HTTPS) | Geolocation of an IP address |
 | **BGP ASN Lookup** | `rdap.arin.net`, `rdap.db.ripe.net`, `rdap.apnic.net` (HTTPS) | Retrieve ASN ownership and announced prefixes via RDAP |
+| **Internet Diagnostic (Speed Test)** | Public speed-test / CDN endpoints: `speed.cloudflare.com`, `*.speedtest.clouvider.net` (NYC/LA/ATL), `chispeed.sharktech.net`, `speedtest.{newark,fremont}.linode.com`, `nyc.download.datapacket.com`, `nj-us-ping.vultr.com`, `speed.riverside.rocks`, and `api.ipify.org` / `api6.ipify.org` (HTTPS); plus `speedtest.belwue.net`, `proof.ovh.net` and `captive.apple.com` over **plain HTTP** (throughput probes only - no personal data in the request) | Measure download/upload throughput, idle vs loaded latency, DNS/path/MTU. Runs only when you start the Internet Diagnostic. |
 
 If you never use these tools, these connections never occur.
 

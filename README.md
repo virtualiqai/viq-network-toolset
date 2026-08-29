@@ -166,7 +166,7 @@ Many tools export a **Virtual IQ AI-branded PDF report** summarizing their findi
 | Disk | ~100 MB installed |
 | Browser | Latest Chrome, Edge, Firefox, or Safari (auto-launched at startup) |
 | Network - outbound | SNMP UDP/161, SSH TCP/22, DNS UDP/53, WHOIS TCP/43, ICMP, plus arbitrary TCP for the port scanner and SSL inspector |
-| Network - inbound | Loopback only (`127.0.0.1`). The application binds to localhost; it never accepts external connections |
+| Network - inbound | Web UI / API: loopback only (`127.0.0.1`). The optional SCP/SFTP Server is a separate inbound listener that runs only when you start it, for authorized devices to upload files |
 
 No Python installation, runtime, or other dependencies are required - everything is bundled.
 

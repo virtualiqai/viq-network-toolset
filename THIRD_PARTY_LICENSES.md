@@ -29,16 +29,16 @@ Versions below reflect the components actually bundled in the shipped (frozen) b
 | **certifi** | 2026.2.25 | MPL-2.0 | © Kenneth Reitz | https://github.com/certifi/python-certifi |
 | **charset-normalizer** | 3.4.7 | MIT | © Ahmed R. TAHRI | https://github.com/jawah/charset_normalizer |
 | **idna** | 3.11 | BSD-3-Clause | © Kim Davies & contributors | https://github.com/kjd/idna |
-| **urllib3** | 2.6.3 | MIT | © Andrey Petrov & contributors | https://github.com/urllib3/urllib3 |
+| **urllib3** | 2.7.0 | MIT | © Andrey Petrov & contributors | https://github.com/urllib3/urllib3 |
 | **paramiko** | 3.5.1 | LGPL-2.1 | © Jeff Forcier & contributors | https://www.paramiko.org/ |
 | **bcrypt** | 5.0.0 | Apache-2.0 | © The Python Cryptographic Authority (PyCA) | https://github.com/pyca/bcrypt |
 | **PyNaCl** | 1.6.2 | Apache-2.0 | © The PyNaCl developers (PyCA) | https://github.com/pyca/pynacl |
-| **cryptography** | 46.0.6 | Apache-2.0 **OR** BSD-3-Clause (dual; recipient may choose) | © The Python Cryptographic Authority (PyCA) | https://cryptography.io/ |
+| **cryptography** | 50.0.1 | Apache-2.0 **OR** BSD-3-Clause (dual; recipient may choose) | © The Python Cryptographic Authority (PyCA) | https://cryptography.io/ |
 | **cffi** *(native `_cffi_backend`)* | bundled | MIT | © Armin Rigo, Maciej Fijałkowski & contributors | https://github.com/python-cffi/cffi |
-| **asyncssh** | 2.22.0 | EPL-2.0 **OR** GPL-2.0-or-later (dual) - **used under EPL-2.0 election** | © Ron Frederick | https://github.com/ronf/asyncssh |
+| **asyncssh** | 2.24.0 | EPL-2.0 **OR** GPL-2.0-or-later (dual) - **used under EPL-2.0 election** | © Ron Frederick | https://github.com/ronf/asyncssh |
 | **openpyxl** | 3.1.5 | MIT | © openpyxl authors (Eric Gazoni, Charlie Clark) | https://openpyxl.readthedocs.io/ |
 | **et_xmlfile** | 2.0.0 | MIT | © openpyxl authors | https://foss.heptapod.net/openpyxl/et_xmlfile |
-| **Pillow (PIL)** | 12.2.0 | MIT-CMU / HPND | © Jeffrey A. Clark & contributors; original PIL © 1997-2011 Secret Labs AB / Fredrik Lundh | https://python-pillow.org/ |
+| **Pillow (PIL)** | 12.3.0 | MIT-CMU / HPND | © Jeffrey A. Clark & contributors; original PIL © 1997-2011 Secret Labs AB / Fredrik Lundh | https://python-pillow.org/ |
 | **defusedxml** | 0.7.1 | PSF-2.0 (Python Software Foundation License) | © Christian Heimes | https://github.com/tiran/defusedxml |
 | **truststore** | 0.10.4 | MIT | © Seth Michael Larson | https://github.com/sethmlarson/truststore |
 | **importlib_metadata** | 8.7.1 | Apache-2.0 | © Jason R. Coombs | https://github.com/python/importlib_metadata |
@@ -94,8 +94,8 @@ Six icons identify the import sources in the "Import SSH sessions" modal:
 | 1 | `~/.ssh` | "Unofficial SSH Logo" | Wikimedia Commons - *Unofficial SSH Logo.svg* by **Jessie Kirk** (2022) | **CC BY 4.0** | **Attribution required** (see *Notices*). Community/unofficial mark - not the OpenSSH project's official logo. |
 | 2 | `CSV` | Spreadsheet / CSV file | **Virtual IQ AI · USA** (first-party, VIQ-original) | First-party - no third-party license | None. Original glyph drawn for this product; no third-party obligation. |
 | 3 | `PuTTY` | PuTTY application logo | **homarr-labs/dashboard-icons** | **Apache-2.0** (icon repo) | Retain Apache-2.0 license + NOTICE attribution. PuTTY software is MIT (© Simon Tatham); the **PuTTY name/logo is a trademark of Simon Tatham** - nominative use. |
-| 4 | `MobaXterm` | MobaXterm application icon | **Mobatek** (mobatek.net) | **Proprietary trademark** - no OSS license | **Nominative/identification use only.** No affiliation. Consider replacing with a neutral label/glyph - see *Compliance Obligations*. |
-| 5 | `SecureCRT` | SecureCRT application icon | **VanDyke Software** | **Proprietary trademark** - no OSS license | **Nominative/identification use only.** No affiliation. Consider replacing with a neutral label/glyph. |
+| 4 | `MobaXterm` | Import-source **name** label - proprietary icon **no longer bundled** (neutral glyph used) | **Mobatek** (mobatek.net) | Trademark - name used nominatively | **Nominative/identification use only.** No affiliation. The logo artwork is not reproduced. |
+| 5 | `SecureCRT` | Import-source **name** label - proprietary icon **no longer bundled** (neutral glyph used) | **VanDyke Software** | Trademark - name used nominatively | **Nominative/identification use only.** No affiliation. The logo artwork is not reproduced. |
 | 6 | `VIQ JSON` | JSON logo (`<title>JSON logo</title>`) | Wikimedia Commons - *JSON vector logo.svg*; logo by **Douglas Crockford** | **Public domain** | No attribution required; credit is courteous. |
 
 ---

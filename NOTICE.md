@@ -10,13 +10,13 @@ All third-party product names, company names, logos, and trademarks referenced i
 
 These names and logos appear **solely to identify interoperability targets, service-reachability endpoints, and import sources** (nominative / descriptive use). Their use does **not** imply any affiliation with, sponsorship by, or endorsement by their respective owners, nor does it imply that those owners endorse or are affiliated with Virtual IQ AI · USA or VIQ Network Toolset.
 
-Where a third-party brand icon is reproduced (for example, to label an SSH-session import source such as PuTTY, MobaXterm, or SecureCRT), it is used for identification only. **MobaXterm** and **SecureCRT** marks are proprietary to Mobatek and VanDyke Software respectively and are reproduced under nominative use; no license to those marks is granted or implied.
+VIQ Network Toolset labels its SSH-session import sources by name (for example PuTTY, MobaXterm, or SecureCRT) so you can identify which file format is being imported. It does **not** reproduce the MobaXterm or SecureCRT logo artwork - those importers use a neutral glyph. The **MobaXterm** and **SecureCRT** marks are proprietary to Mobatek and VanDyke Software respectively and are referenced under nominative use only; no affiliation, endorsement, or licence is implied.
 
 ---
 
 ## Third-party components
 
-VIQ Network Toolset bundles open-source software, publicly available data, and third-party icons. A complete inventory - with versions, licenses, copyright holders, and required attribution text - is provided in **`THIRD_PARTY_LICENSES.md`**, distributed alongside this notice. Highlights of required attributions:
+VIQ Network Toolset bundles open-source software, publicly available data, and third-party icons. The identified third-party components and their attributions - with versions, licenses, copyright holders, and required attribution text - are provided in **`THIRD_PARTY_LICENSES.md`**, distributed alongside this notice. Highlights of required attributions:
 
 - **IEEE OUI / MA-L registry** - MAC-vendor data made publicly available by the **IEEE Registration Authority** (https://standards-oui.ieee.org/). IEEE does not endorse this product.
 - **"Unofficial SSH Logo"** by **Jessie Kirk** - licensed **CC BY 4.0** (https://creativecommons.org/licenses/by/4.0/); a community logo, not an official OpenSSH mark.
